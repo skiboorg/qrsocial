@@ -1,0 +1,128 @@
+.groups
+  margin-bottom: 100px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr))
+    grid-gap: 15px
+
+.group-item
+  background: #FFFFFF
+  border-radius: 20px
+  position: relative
+  z-index: 1
+  padding: 50px
+  & .btn
+    width: 100%
+    height: 50px
+  &__button
+    position: absolute
+    background: #FFFFFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 83px
+    right: 25px
+    cursor: pointer
+  &__top
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 100px
+    background-position: center !important
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    z-index: -1
+  &__img
+    border-radius: 100%
+    background: $blue-gradient
+    width: 110px
+    height: 110px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 15px
+    box-sizing: border-box
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1))
+    img
+      border-radius: 100%
+      width: 100px
+      height: 100px
+      object-fit: cover
+  &__title
+    font-weight: bold
+    font-size: 24px
+    text-align: center
+    letter-spacing: 0.05em
+    color: #545454
+    margin-bottom: 10px
+  &__subtitle
+    text-align: center
+    font-size: 14px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #3E3442
+    margin-bottom: 30px
+  &__numbers
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    margin-bottom: 30px
+  &__number
+    p
+      &:first-child
+        font-weight: bold
+        text-align: center
+        background: $blue-gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 10px
+      &:last-child
+        font-size: 12px
+        text-align: center
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: #3E3442
+  &__avatars
+    direction: ltr
+    padding-left: 25px
+    text-align: center
+    margin-bottom: 35px
+  &__avatar
+    position: relative
+    cursor: pointer
+    left: -5px
+    top: 0
+    margin-left: -25px
+    z-index: 1
+    transition: top .2s linear
+    &:hover
+
+      top: -5px
+      //z-index: 100
+    img
+      width: 40px
+      height: 40px
+      object-fit: cover
+      border-radius: 50%
+    p
+      position: relative
+      top: -15px
+      display: inline-flex
+      border-radius: 50%
+      width: 40px
+      height: 40px
+      background: #28DEEF
+      font-weight: bold
+      font-size: 12px
+      color: #FFFFff
+      align-items: center
+      justify-content: center
+
+
+
+

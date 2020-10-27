@@ -1,0 +1,87 @@
+.models
+  margin-bottom: 100px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr))
+    grid-gap: 15px
+.model-item
+  position: relative
+  background: #FFFFff
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  z-index: 1
+  padding: 30px 0
+  text-align: center
+  height: fit-content
+  &.item-hidden
+    height: 480px
+    overflow: hidden
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    height: 250px
+    right: 0
+    z-index: -1
+    background-position: center !important
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+  &__img
+    background: #FFFFff
+    border-radius: 100%
+    width: 300px
+    height: 300px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 15px
+    box-sizing: border-box
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1))
+    img
+      border-radius: 100%
+      width: 290px
+      height: 290px
+      object-fit: cover
+  &__name
+    font-weight: bold
+    font-size: 28px
+    line-height: 37px
+    text-align: center
+    text-transform: uppercase
+    color: #455567
+    max-width: 200px
+    word-break: break-word
+    margin: 0 auto 15px
+  &__login
+    font-weight: bold
+    font-size: 20px
+    line-height: 26px
+    letter-spacing: 0.05em
+    color: #828282
+    margin-bottom: 30px
+  &__buttons
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+
+.model-item__info
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 50px
+  &-left
+    margin-right: 65px
+  &-title
+    font-weight: bold
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #3E3442
+    margin-bottom: 5px
+  &-text
+    font-weight: bold
+    color: #000000
+    opacity: 0.6
+

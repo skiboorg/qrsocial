@@ -1,0 +1,53 @@
+.features
+  margin-bottom: 100px
+  &-big-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 70px
+    margin-bottom: 100px
+  &-small-wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr))
+    grid-template-rows: 280px
+    grid-gap: 20px
+
+  &-text-item
+    padding: 0 40px
+    background: #FFFFFF
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05)
+    border-radius: 40px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__title
+      font-weight: bold
+      font-size: 30px
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #455567
+      margin-bottom: 35px
+    &__text
+      color: #000000
+      opacity: 0.6
+
+.feature-small-item
+  background: $blue-gradient
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  height: 280px
+  &:nth-child(even)
+      margin-top: 40px
+  img
+    margin-bottom: 35px
+  p
+    color: #FFFFff
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    text-align: center
+
+

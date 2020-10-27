@@ -1,0 +1,206 @@
+
+.tariff
+  margin-bottom: 100px
+  &-wrapper
+    max-width: 1000px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 10px
+
+
+.tariff-one
+  position: relative
+  background: $blue-gradient
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 40px
+  width: 270px
+  margin: 0 auto
+  padding: 2px
+  height: fit-content
+  &::before
+    position: absolute
+    content: url(/like_icon.png)
+    width: 90px
+    height: 90px
+    border: 2px solid #5753E8
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFFFff
+    top: -45px
+    left: 0
+    right: 0
+    margin: 0 auto
+  &__wrapper
+    padding: 45px 0 30px 0
+    background: #FFFFff
+    border-radius: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__name
+    font-weight: bold
+    font-size: 24px
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #000000
+    margin-bottom: 15px
+  &__price
+    background: $blue-gradient
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-bottom: 30px
+    p
+      font-weight: bold
+      font-size: 36px
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #FFFFff
+  &__info
+    margin-bottom: 70px
+    &-item
+      font-weight: bold
+      font-size: 18px
+      line-height: 150%
+      color: #7B7B7B
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0
+
+
+.tariff-two
+  position: relative
+  background: $orange-gradient
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 40px
+  max-width: 390px
+  padding: 2px
+  &::before
+    position: absolute
+    content: url(/crown_icon.png)
+    width: 135px
+    height: 135px
+    border: 2px solid #EF422B
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFFFff
+    top: -65px
+    left: 0
+    right: 0
+    margin: 0 auto
+  &__wrapper
+    padding: 80px 0 30px 0
+    background: #FFFFff
+    border-radius: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__name
+    font-weight: bold
+    font-size: 24px
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    background: $orange-gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    margin-bottom: 15px
+  &__price
+    background: $orange-gradient
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-bottom: 30px
+    p
+      font-weight: bold
+      font-size: 48px
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #FFFFff
+  &__info
+    margin-bottom: 70px
+    &-item
+      font-weight: bold
+      font-size: 20px
+      line-height: 150%
+      color: #404040
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0
+
+.tariff-three
+  position: relative
+  background: #FFFFff
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 40px
+  width: 270px
+  margin: 0 auto
+  padding: 2px
+  height: fit-content
+  &::before
+    position: absolute
+    content: ''
+    width: 90px
+    height: 90px
+    border: 2px solid #FFFFff
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $blue-gradient
+    top: -45px
+    left: 0
+    right: 0
+    margin: 0 auto
+  &__wrapper
+    padding: 45px 0 30px 0
+    background: $blue-gradient
+    border-radius: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__name
+    font-weight: bold
+    font-size: 24px
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #000000
+    margin-bottom: 15px
+  &__price
+    background: #FFFFff
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-bottom: 30px
+    p
+      font-weight: bold
+      font-size: 36px
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #000000
+  &__info
+    margin-bottom: 70px
+    &-item
+      font-weight: bold
+      font-size: 18px
+      line-height: 150%
+      color: #FFFFff
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0

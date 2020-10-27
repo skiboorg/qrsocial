@@ -1,0 +1,150 @@
+$blue-gradient: linear-gradient(135deg, #5753E8 0%, #28DEEF 100%)
+$gold-gradient: linear-gradient(180deg, #FFDFAE 0%, #BC8740 100%)
+$orange-gradient: linear-gradient(95.62deg, #EF422B 0%, #efdb28 99.74%)
+
+@font-face
+	font-family: 'Msyh'
+	src: url('/chinese.msyh.ttf')
+	font-display: swap
+	font-style: normal
+
+body
+  font: 16px 'Msyh', sans-serifi
+  background: #f2f2f8
+  color: #3F3F3F
+
+.container
+  max-width: 1200px
+  padding: 0 10px
+  margin: 0 auto
+
+.banner
+  margin-bottom: 50px
+  background-position: center !important
+
+.gold-bg
+  background: $gold-gradient !important
+
+.text-center
+  text-align: center
+
+.section-header
+  font-weight: bold
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  color: #403E83
+  &.header-w-icon
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    img
+      margin-right: 20px
+  &.style-simple
+    font-size: 48px
+  &.style-outline
+    font-size: 72px
+    color: #403E83
+    -webkit-text-fill-color: white
+    -webkit-text-stroke-width: 4px
+    -webkit-text-stroke-color: #403E83
+
+.section-subheader
+  font-weight: bold
+  font-size: 20px
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  color: #455567
+
+.text-orange
+  background: $orange-gradient
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.text-blue
+  background: $blue-gradient
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 8px 10px
+  width: 160px
+  border-radius: 10px
+  cursor: pointer
+  p
+    font-weight: bold
+    color: #ffffff
+  &.btn-blue-solid
+    background: #6E6AEC
+  &.btn-blue
+    background: $blue-gradient
+  &.btn-orange
+    background: $orange-gradient
+  &.btn-white
+    background: #FFFFff
+    p
+      color: #000000 !important
+  &.btn-w-img
+    justify-content: space-between
+  &.btn-round
+    border-radius: 50px !important
+
+.btn-outline
+  border-radius: 50px !important
+  padding: 1px
+  &-inner
+    background: #FFFFff
+    padding: 8px 10px
+    width: 100%
+    border-radius: 50px !important
+    p
+      text-align: center
+      background: $orange-gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+  &.btn-outline-gold
+    background: $orange-gradient
+  &.btn-outline-blue
+    background: $blue-gradient
+    & .btn-outline-inner
+      p
+        background: $blue-gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+
+
+.block-rounded
+  background: #FFFFFF
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05)
+  border-radius: 20px
+  margin-bottom: 20px
+  &.p50
+    padding: 50px
+  &.p20
+    padding: 20px
+  &.border-orange
+    background: $orange-gradient
+    &.block-rounded
+      padding: 8px
+
+.block-inner
+  border-radius: 20px
+  background: #ffffff
+  padding: 50px
+
+
+.mb-10
+  margin-bottom: 10px !important
+.mb-20
+  margin-bottom: 20px !important
+.mb-30
+  margin-bottom: 30px !important
+.mb-40
+  margin-bottom: 40px !important
+.mb-50
+  margin-bottom: 50px !important
+.mb-60
+  margin-bottom: 60px !important
