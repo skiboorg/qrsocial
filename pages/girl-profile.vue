@@ -5,7 +5,7 @@
         <div class="girl-profile-area">
           <div class="girl-profile-area__img" style="background: url(/test_p_g_bg.png) no-repeat center"></div>
           <div class="girl-profile-area__avatar">
-            <img src="https://picsum.photos/400/400?image=200" alt="">
+            <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
           </div>
           <div class="girl-profile-area__info">
             <div class="girl-profile-area__info--top">
@@ -187,177 +187,43 @@
                 <div class="model-item">
                   <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
                   <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
+                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
                   </div>
                   <p class="model-item__name">Alice Krystal</p>
                   <p class="model-item__login">@kistochka</p>
 
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="model-item">
+               <div class="model-item">
                   <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
                   <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
+                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
                   </div>
                   <p class="model-item__name">Alice Krystal</p>
                   <p class="model-item__login">@kistochka</p>
 
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="model-item">
+               <div class="model-item">
                   <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
                   <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
+                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
                   </div>
                   <p class="model-item__name">Alice Krystal</p>
                   <p class="model-item__login">@kistochka</p>
 
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
 
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
-
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="/test_w.png" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
-
-                  <div class="model-item__info">
-                    <div class="model-item__info-left">
-                      <p class="model-item__info-title">年龄</p>
-                      <p class="model-item__info-text">24岁</p>
-                    </div>
-                    <div class="model-item__info-right">
-                      <p class="model-item__info-title">兴趣爱好</p>
-                      <p class="model-item__info-text">滑雪，乐透...</p>
-                    </div>
-                  </div>
-                  <div class="model-item__buttons">
-                    <div class="btn btn-blue btn-round"><p> 写短信</p></div>
-                    <div class="btn btn-outline btn-outline-gold ">
-                      <div class="btn-outline-inner">
-                        <p>添加</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
         </div><!--        userFriends-->
         <div v-show="activeTab==='userGallery'" class="girl-profile-gallery">
           <p class="section-subheader mb-50">专辑 3</p>
           <div class="girl-profile-albums">
-            <div class="girl-profile-album" style="background:linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="girl-profile-album" style="background:linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="girl-profile-album__counter">
                 <p>47</p></div>
               <div class="girl-profile-album__title">个人资料照片</div>
               <div class="girl-profile-album__subtitle">1周前更新</div>
             </div>
-            <div class="girl-profile-album  " style="background:linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="girl-profile-album  " style="background:linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="girl-profile-album__locked">
                 <img src="/stream_for_vip_icon.png" alt="">
               </div>
@@ -366,13 +232,13 @@
               <div class="girl-profile-album__title">个人资料照片</div>
               <div class="girl-profile-album__subtitle">1周前更新</div>
             </div>
-            <div class="girl-profile-album" style="background: url(http://placehold.it/310) no-repeat center">
+            <div class="girl-profile-album" style="background: url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="girl-profile-album__counter">
                 <p>47</p></div>
               <div class="girl-profile-album__title">个人资料照片</div>
               <div class="girl-profile-album__subtitle">1周前更新</div>
             </div>
-            <div class="girl-profile-album" style="background: url(http://placehold.it/310) no-repeat center">
+            <div class="girl-profile-album" style="background: url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="girl-profile-album__counter">
                 <p>47</p></div>
               <div class="girl-profile-album__title">个人资料照片</div>
@@ -381,7 +247,7 @@
           </div>
           <p class="section-subheader mb-50">VIP专辑 1</p>
           <div class="girl-profile-albums">
-            <div class="girl-profile-album vipAlbum " style="background:linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="girl-profile-album vipAlbum " style="background:linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="girl-profile-album__locked">
                 <img src="/stream_for_vip_icon.png" alt="">
               </div>
@@ -395,24 +261,23 @@
 
           <p class="section-subheader mb-50">最后一张照片 34</p>
           <div class="girl-profile-album-content">
-            <div @click="currentImage='http://placehold.it/1000x1000',imageModal=true" class="girl-profile-album-content__item">
-              <img src="/test.png" alt="">
+            <div @click="currentImage='https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048',imageModal=true" class="girl-profile-album-content__item">
+              <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
             </div>
-            <div class="girl-profile-album-content__item">
-              <img src="https://picsum.photos/400/400?image=255" alt="">
+            <div @click="currentImage='https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048',imageModal=true" class="girl-profile-album-content__item">
+              <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
             </div>
-            <div class="girl-profile-album-content__item">
-              <img src="https://picsum.photos/400/400?image=255" alt="">
+            <div @click="currentImage='https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048',imageModal=true" class="girl-profile-album-content__item">
+              <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
             </div>
-            <div class="girl-profile-album-content__item">
-              <img src="https://picsum.photos/400/400?image=255" alt="">
+            <div @click="currentImage='https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048',imageModal=true" class="girl-profile-album-content__item">
+              <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
             </div>
-            <div class="girl-profile-album-content__item">
-              <img src="https://picsum.photos/400/400?image=255" alt="">
+            <div @click="currentImage='https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048',imageModal=true" class="girl-profile-album-content__item">
+              <img src="https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048" alt="">
             </div>
-            <div class="girl-profile-album-content__item">
-              <img src="https://picsum.photos/400/400?image=255" alt="">
-            </div>
+
+
           </div>
 
           <vs-popup class="holamundo"   :active.sync="imageModal">
@@ -423,7 +288,7 @@
             <div class="streams-wrapper">
        <div class="stream-item ">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -447,7 +312,7 @@
           </div>
           <div class="stream-item ">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -471,7 +336,7 @@
           </div>
            <div class="stream-item stream-vip">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -495,7 +360,7 @@
           </div>
           <div class="stream-item stream-vip">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -519,7 +384,7 @@
           </div>
               <div class="stream-item ">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -543,7 +408,7 @@
           </div>
           <div class="stream-item ">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -567,7 +432,7 @@
           </div>
            <div class="stream-item stream-vip">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">
@@ -591,7 +456,7 @@
           </div>
           <div class="stream-item stream-vip">
             <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(/test.png) no-repeat center">
+            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
               <div class="stream-item__top-btn">
                 <div class="stream-item__top-btn--inner">
                   <img draggable="false" src="/play_icon.png" alt="">

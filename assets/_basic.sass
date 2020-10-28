@@ -47,6 +47,13 @@ body
     -webkit-text-fill-color: white
     -webkit-text-stroke-width: 4px
     -webkit-text-stroke-color: #403E83
+  &.w-icon
+    font-size: 40px
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+    svg
+      margin-right: 20px
 
 .section-subheader
   font-weight: bold
@@ -54,6 +61,35 @@ body
   letter-spacing: 0.1em
   text-transform: uppercase
   color: #455567
+
+.section-divider
+  position: relative
+  border-radius: 20px
+  padding: 40px 0 40px 240px
+  margin-bottom: 40px
+  &.divider-blue
+    background: $blue-gradient
+  &__img
+    position: absolute
+    width: 150px
+    height: 150px
+    object-fit: cover
+    left: 30px
+    top: 0
+    bottom: 0
+    margin: auto 0
+
+  &__text
+    p
+      color: #FFFFff
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      &:first-child
+        font-size: 36px
+        font-weight: bold
+        margin-bottom: 10px
+      &:last-child
+        font-size: 18px
 
 .text-orange
   background: $orange-gradient
