@@ -9,11 +9,11 @@
      <div class="header-nav">
        <ul class="header-nav__wrapper">
          <li class="header-nav__item">
-           <nuxt-link class="header-nav__link" to="/girls">关于我们的平台</nuxt-link>
+           <nuxt-link class="header-nav__link" to="/girls">我们的女孩</nuxt-link>
 
          </li>
-         <li class="header-nav__item"><nuxt-link class="header-nav__link" to="/groups">关于我们的平台</nuxt-link></li>
-         <li class="header-nav__item"><nuxt-link class="header-nav__link" to="/streams">关于我们的平台</nuxt-link></li>
+         <li class="header-nav__item"><nuxt-link class="header-nav__link" to="/groups">社会团体</nuxt-link></li>
+         <li class="header-nav__item"><nuxt-link class="header-nav__link" to="/streams">我们的广播</nuxt-link></li>
          <li class="header-nav__item"><a class="header-nav__link" href="#">广播类别</a></li>
        </ul>
      </div>

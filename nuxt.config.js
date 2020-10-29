@@ -14,6 +14,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    'material-icons/iconfont/material-icons.css',
     '@/assets/main.sass',
     'vuesax/dist/vuesax.css'
   ],

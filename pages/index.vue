@@ -2,7 +2,7 @@
   <div>
     <section class="banner" style="background: url(/banner.png) no-repeat center;height: 800px">
       <div class="banner-girl-login">
-        <p>вход для девушек</p>
+        <p><nuxt-link to="/girl-login">вход для девушек</nuxt-link></p>
       </div>
       <div class="banner-info-label " :class="{'infoBlockActive':showSideBlock}" @click="showSideBlock ? showSideBlock = false : showSideBlock = true">
         <svg width="15" height="53" viewBox="0 0 15 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@
       <div class="banner-info-block">
         <div class="banner-info-block__top">
 
-            <img class="banner-info-block__top--img" src="http://placehold.it/300" alt="">
+            <img class="banner-info-block__top--img" src="/lip.webp" alt="">
 
           <div class="banner-info-block__top--name">
             <p>Li pin hin</p>
@@ -34,10 +34,10 @@
             <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
           </div>
           <div class="">
-            <img src="/feature-img-1.png" alt="">
+            <img src="/features-img-2.png" alt="">
           </div>
           <div class="">
-            <img src="/features-img-2.png" alt="">
+            <img src="/features-img-4.png" alt="">
           </div>
           <div class="features-text-item">
             <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
@@ -51,7 +51,7 @@
             <img src="/feature-img-1.png" alt="">
           </div>
           <div class="">
-            <img src="/features-img-2.png" alt="">
+            <img src="/features-img-3.png" alt="">
           </div>
           <div class="features-text-item">
             <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
@@ -243,7 +243,7 @@
         <div class="tariff-wrapper">
           <div class="tariff-one">
             <div class="tariff-one__wrapper">
-              <p class="tariff-one__name">VIP 1monts</p>
+              <p class="tariff-one__name">每月固定费用</p>
               <div class="tariff-one__price">
                 <p>124.00Y</p>
               </div>
@@ -252,39 +252,39 @@
                 <p class="tariff-one__info-item">+使用相机</p>
                 <p class="tariff-one__info-item">+送礼物的能力</p>
               </div>
-              <div class="btn btn-blue"><p>text</p></div>
+              <div class="btn btn-blue"><p>申请</p></div>
             </div>
 
 
           </div>
           <div class="tariff-two">
             <div class="tariff-two__wrapper">
-              <p class="tariff-two__name">VIP 6 monts</p>
+              <p class="tariff-two__name">VIP费是最好的</p>
               <div class="tariff-two__price">
-                <p>124.00Y</p>
+                <p>999.00Y</p>
               </div>
               <div class="tariff-two__info">
                 <p class="tariff-two__info-item">+一般聊天中的交流</p>
                 <p class="tariff-two__info-item">+使用相机</p>
                 <p class="tariff-two__info-item">+送礼物的能力</p>
               </div>
-              <div class="btn btn-orange"><p>text</p></div>
+              <div class="btn btn-orange"><p>申请</p></div>
             </div>
 
 
           </div>
           <div class="tariff-three">
             <div class="tariff-three__wrapper">
-              <p class="tariff-three__name">VIP 6 monts</p>
+              <p class="tariff-three__name">个人关税</p>
               <div class="tariff-three__price">
-                <p>124.00Y</p>
+                <p>XX.00Y</p>
               </div>
               <div class="tariff-three__info">
                 <p class="tariff-three__info-item">+一般聊天中的交流</p>
                 <p class="tariff-three__info-item">+使用相机</p>
                 <p class="tariff-three__info-item">+送礼物的能力</p>
               </div>
-              <div class="btn btn-white"><p>text</p></div>
+              <div class="btn btn-white"><p>申请</p></div>
             </div>
 
 
@@ -292,7 +292,7 @@
         </div>
       </div>
     </section><!--tariffs-->
-
+     <p style="margin-bottom: 100px" class="section-header style-outline text-center ">女孩名单</p>
 
     <section class="groups">
       <div class="container">
