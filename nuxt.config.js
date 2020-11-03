@@ -14,14 +14,16 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    'element-ui/lib/theme-chalk/index.css',
     'material-icons/iconfont/material-icons.css',
+    'vuesax/dist/vuesax.css',
     '@/assets/main.sass',
-    'vuesax/dist/vuesax.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/vuesax'
+    '@/plugins/vuesax',
+    '@/plugins/element-ui',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -44,5 +46,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+     transpile: [/^element-ui/],
   }
 }
