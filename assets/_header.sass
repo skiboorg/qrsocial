@@ -1,5 +1,5 @@
 .header
-  background: #FFFFff
+  background: #605DD0
   &-wrapper
     padding: 25px 30px
     display: flex
@@ -13,11 +13,12 @@
       justify-content: space-between
     &__item
     &__link
-      color: #000000
+      color: #ffffff
   &-balance
-    background: #EAEAEA
+    background: #4C32B1
     border-radius: 10px
-    padding: 7px 10px
+    //padding: 7px 10px
+    padding: 0 0 0 7px
     display: flex
     align-items: center
     justify-content: space-between
@@ -32,13 +33,28 @@
     &__amount
       font-weight: bold
       flex-grow: 1
+      color: #FFFFff
     &__text
       letter-spacing: 0.1em
+      color: #FFFFff
+      flex-grow: 1
+    &__btn
+      background: #FFFFff
+      font-weight: bold
+      font-size: 10px
+      line-height: 13px
+      letter-spacing: 0.1em
+      color: #269AEE
+      padding: 13px
+      border-radius: 0px 10px 10px 0px
+      cursor: pointer
+
+
   &-buttons
     display: flex
     align-items: center
     justify-content: space-between
-    flex-basis: 200px
+    flex-basis: 270px
     &__item
       border-radius: 10px
       width: 40px
@@ -48,5 +64,15 @@
       align-items: center
       justify-content: center
       background: #E8E8E8
+  &-button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-basis: 60px
+    p
+      color: #FFFFff
+      font-size: 14px
+      letter-spacing: 0.1em
+      cursor: pointer
 
 
