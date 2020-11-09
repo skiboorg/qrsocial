@@ -1,12 +1,16 @@
 <template>
   <div>
     <section class="girl-login-page">
-
-      <vs-tabs>
+      <div class="container entrance-top">
+        <img src="http://placehold.it/590x190" alt="">
+      <img src="http://placehold.it/590x190" alt="">
+      </div>
+      <div class="entrance-form">
+        <vs-tabs>
       <vs-tab label="Вход">
         <div class="con-tab-ejemplo">
             <vs-card  class="cardx girl-login">
-      <div class="girl-login__header" slot="header"><p>вход </p> </div>
+
 
         <div style="padding: 20px 60px">
            <vs-input style="width: 100%;margin-bottom: 30px"  size="large" label-placeholder="ваша почта" v-model="value1"/>
@@ -25,7 +29,7 @@
       <vs-tab label="Регистрация">
         <div class="con-tab-ejemplo">
            <vs-card  class="cardx girl-login">
-      <div class="girl-login__header" slot="header"><p>Регистрация</p> </div>
+
 
         <div style="padding: 20px 60px">
            <vs-input style="width: 100%;margin-bottom: 30px"  size="large" label-placeholder="ваша почта" v-model="value1"/>
@@ -43,6 +47,8 @@
       </vs-tab>
 
     </vs-tabs>
+      </div>
+
 
 
 
@@ -80,5 +86,9 @@
 }
   .vs-tabs--content{
     padding: 40px;
+
   }
+.con-vs-card{
+  box-shadow: none;
+}
 </style>

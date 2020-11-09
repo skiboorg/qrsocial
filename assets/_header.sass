@@ -1,7 +1,10 @@
 .header
   background: #605DD0
+  position: fixed
+  width: 100%
+  top: 0
   &-wrapper
-    padding: 25px 30px
+    padding: 12px 30px
     display: flex
     align-items: center
     justify-content: space-between
@@ -48,13 +51,14 @@
       padding: 13px
       border-radius: 0px 10px 10px 0px
       cursor: pointer
-
-
   &-buttons
     display: flex
     align-items: center
     justify-content: space-between
-    flex-basis: 270px
+    &.fb-270
+      flex-basis: 270px
+    &.fb-380
+      flex-basis: 380px
     &__item
       border-radius: 10px
       width: 40px
@@ -74,5 +78,68 @@
       font-size: 14px
       letter-spacing: 0.1em
       cursor: pointer
+  &-mobile
+    display: none
+    align-items: center
+    justify-content: space-between
+    flex-basis: 150px
+    &__btn
+      width: 40px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #3230A3
+      border-radius: 10px
+      transition: all .2s linear
+      &-icon
+        color: #FFFFff
+        transition: all .2s linear
+        font-size: 26px
+      &.bntActive
+        background: #FFFFff
+        & .header-mobile__btn-icon
+          color: #3230A3
+
+.mobile-menu
+  position: absolute
+  top: 68px
+  width: 300px
+  right: 0
+  transform: translateX(110%)
+  background: #FFFFff
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+  z-index: 1000
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all .2s linear
+  &.mobileMenuActive
+    transform: translateX(0)
+
+  &__wrapper
+    padding: 70px 0
+  &__item
+    text-align: center
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+  &__link
+    color: #212121
 
 
+@media (max-width: 420px)
+  .logo
+    width: 128px
+    height: 44px
+  .header
+    &-nav
+      display: none
+    &-buttons
+      display: none
+    &-balance
+      display: none
+    &-login
+      display: none
+    &-mobile
+      display: flex

@@ -1,67 +1,107 @@
 <template>
   <div>
+    <div class="page-fixed">
+      <div  class="page-fixed__top-btn">
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.3633 14.7104L14.3708 0.889623C14.2624 0.764563 14.1284 0.664265 13.9778 0.595526C13.8273 0.526786 13.6637 0.491211 13.4982 0.491211C13.3327 0.491211 13.1691 0.526786 13.0186 0.595526C12.868 0.664265 12.734 0.764563 12.6256 0.889623L0.636717 14.7104C0.600489 14.7521 0.576999 14.8033 0.569045 14.8579C0.561091 14.9125 0.569008 14.9683 0.591853 15.0186C0.614698 15.0688 0.651508 15.1115 0.697899 15.1414C0.74429 15.1713 0.798307 15.1873 0.853514 15.1874H3.78027C3.94648 15.1874 4.10547 15.1151 4.21748 14.9886L12.127 5.87234V26.2187C12.127 26.3777 12.257 26.5078 12.416 26.5078H14.584C14.743 26.5078 14.873 26.3777 14.873 26.2187V5.87234L22.7825 14.9886C22.8909 15.1151 23.0499 15.1874 23.2197 15.1874H26.1465C26.3922 15.1874 26.5259 14.8983 26.3633 14.7104Z" fill="#3E3F5E"/>
+        </svg>
+      </div>
+      <div class="page-fixed__info-btn">
+        <p @click="infoModal=true">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 37.3332C8.87446 37.3332 0.666626 29.1253 0.666626 18.9998C0.666626 8.87434 8.87446 0.666504 19 0.666504C29.1255 0.666504 37.3333 8.87434 37.3333 18.9998C37.3333 29.1253 29.1255 37.3332 19 37.3332ZM19 33.6665C22.8898 33.6665 26.6203 32.1213 29.3709 29.3707C32.1214 26.6202 33.6666 22.8897 33.6666 18.9998C33.6666 15.11 32.1214 11.3795 29.3709 8.62894C26.6203 5.8784 22.8898 4.33317 19 4.33317C15.1101 4.33317 11.3796 5.8784 8.62906 8.62894C5.87853 11.3795 4.33329 15.11 4.33329 18.9998C4.33329 22.8897 5.87853 26.6202 8.62906 29.3707C11.3796 32.1213 15.1101 33.6665 19 33.6665ZM19 15.3332C19.4862 15.3332 19.9525 15.5263 20.2963 15.8701C20.6401 16.214 20.8333 16.6803 20.8333 17.1665V26.3332C20.8333 26.8194 20.6401 27.2857 20.2963 27.6295C19.9525 27.9734 19.4862 28.1665 19 28.1665C18.5137 28.1665 18.0474 27.9734 17.7036 27.6295C17.3598 27.2857 17.1666 26.8194 17.1666 26.3332V17.1665C17.1666 16.6803 17.3598 16.214 17.7036 15.8701C18.0474 15.5263 18.5137 15.3332 19 15.3332ZM19 13.4998C18.5137 13.4998 18.0474 13.3067 17.7036 12.9629C17.3598 12.6191 17.1666 12.1527 17.1666 11.6665C17.1666 11.1803 17.3598 10.714 17.7036 10.3701C18.0474 10.0263 18.5137 9.83317 19 9.83317C19.4862 9.83317 19.9525 10.0263 20.2963 10.3701C20.6401 10.714 20.8333 11.1803 20.8333 11.6665C20.8333 12.1527 20.6401 12.6191 20.2963 12.9629C19.9525 13.3067 19.4862 13.4998 19 13.4998Z" fill="#3E3F5E"/>
+          </svg>
+          <span>关于我们</span>
+        </p>
+        <nuxt-link to="/entrance">
+        <p>
+          <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3789 0.203184C12.4218 0.187559 7.17964 3.26959 4.18355 7.92585C4.05073 8.13288 4.19917 8.40631 4.44526 8.40631H7.19136C7.37886 8.40631 7.55464 8.32428 7.67183 8.17975C7.94526 7.84772 8.23823 7.52741 8.54683 7.22272C9.82026 5.95319 11.3007 4.95319 12.9492 4.25787C14.6523 3.53912 16.4648 3.17194 18.3359 3.17194C20.207 3.17194 22.0195 3.53522 23.7226 4.25787C25.371 4.95319 26.8515 5.95319 28.125 7.22272C29.3984 8.49225 30.3945 9.97272 31.0937 11.6173C31.8164 13.3204 32.1796 15.129 32.1796 17.0001C32.1796 18.8712 31.8125 20.6798 31.0937 22.3829C30.3984 24.0274 29.3984 25.5079 28.125 26.7774C26.8515 28.0469 25.371 29.047 23.7226 29.7423C22.0181 30.4622 20.1862 30.8315 18.3359 30.8282C16.4648 30.8282 14.6523 30.461 12.9492 29.7423C11.304 29.0477 9.80896 28.0408 8.54683 26.7774C8.23823 26.4688 7.94917 26.1485 7.67183 25.8204C7.55464 25.6759 7.37495 25.5938 7.19136 25.5938H4.44526C4.19917 25.5938 4.04683 25.8673 4.18355 26.0743C7.17573 30.7188 12.3945 33.797 18.3359 33.797C27.5625 33.797 35.0546 26.3712 35.1484 17.1719C35.2421 7.82428 27.7382 0.226622 18.3789 0.203184ZM13.4304 21.3751V18.4063H1.16479C0.99292 18.4063 0.852295 18.2657 0.852295 18.0938V15.9063C0.852295 15.7344 0.99292 15.5938 1.16479 15.5938H13.4304V12.6251C13.4304 12.3633 13.7351 12.2149 13.9382 12.379L19.4812 16.754C19.5186 16.7832 19.5488 16.8206 19.5695 16.8632C19.5903 16.9058 19.6011 16.9526 19.6011 17.0001C19.6011 17.0475 19.5903 17.0943 19.5695 17.1369C19.5488 17.1796 19.5186 17.2169 19.4812 17.2462L13.9382 21.6212C13.7351 21.7813 13.4304 21.6368 13.4304 21.3751Z" fill="black"/>
+          </svg>
+
+          <span>登录</span>
+        </p>
+        </nuxt-link>
+      </div>
+    </div>
     <section class="banner" style="background: url(/banner.png) no-repeat center;height: 800px">
       <div class="banner-girl-login">
         <p><nuxt-link to="/girl-login">вход для девушек</nuxt-link></p>
       </div>
-      <div class="banner-info-label " :class="{'infoBlockActive':showSideBlock}" @click="showSideBlock ? showSideBlock = false : showSideBlock = true">
-        <svg width="15" height="53" viewBox="0 0 15 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.9722 17.7554L0.804724 19.4056L0.333225 21.5906L2.92072 22.0679C4.61123 22.4704 4.94473 23.0799 4.57673 24.7646L0.333225 44.7056C-0.782275 49.8634 0.936976 52.2899 4.97923 52.2899C8.11298 52.2899 11.7527 50.8409 13.403 48.8514L13.909 46.4594C12.759 47.4714 11.08 47.8739 9.96447 47.8739C8.38322 47.8739 7.80823 46.7641 8.21648 44.8091L13.9722 17.7554Z" fill="white"/>
-          <path d="M8.625 11.5C11.8006 11.5 14.375 8.92564 14.375 5.75C14.375 2.57436 11.8006 0 8.625 0C5.44936 0 2.875 2.57436 2.875 5.75C2.875 8.92564 5.44936 11.5 8.625 11.5Z" fill="white"/>
-        </svg>
-        <p>213</p>
-      </div>
-      <div class="banner-info-block">
-        <div class="banner-info-block__top">
+      <!--      <div class="banner-info-label " :class="{'infoBlockActive':showSideBlock}" @click="showSideBlock ? showSideBlock = false : showSideBlock = true">-->
+      <!--        <svg width="15" height="53" viewBox="0 0 15 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+      <!--          <path d="M13.9722 17.7554L0.804724 19.4056L0.333225 21.5906L2.92072 22.0679C4.61123 22.4704 4.94473 23.0799 4.57673 24.7646L0.333225 44.7056C-0.782275 49.8634 0.936976 52.2899 4.97923 52.2899C8.11298 52.2899 11.7527 50.8409 13.403 48.8514L13.909 46.4594C12.759 47.4714 11.08 47.8739 9.96447 47.8739C8.38322 47.8739 7.80823 46.7641 8.21648 44.8091L13.9722 17.7554Z" fill="white"/>-->
+      <!--          <path d="M8.625 11.5C11.8006 11.5 14.375 8.92564 14.375 5.75C14.375 2.57436 11.8006 0 8.625 0C5.44936 0 2.875 2.57436 2.875 5.75C2.875 8.92564 5.44936 11.5 8.625 11.5Z" fill="white"/>-->
+      <!--        </svg>-->
+      <!--        <p>213</p>-->
+      <!--      </div>-->
+      <!--      <div class="banner-info-block">-->
+      <!--        <div class="banner-info-block__top">-->
 
-            <img class="banner-info-block__top--img" src="/lip.webp" alt="">
+      <!--            <img class="banner-info-block__top&#45;&#45;img" src="/lip.webp" alt="">-->
 
-          <div class="banner-info-block__top--name">
-            <p>Li pin hin</p>
-            <p>creator QR SOCIAL</p>
-          </div>
-        </div>
-        <div class="banner-info-block__content">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>
-        </div>
-      </div>
+      <!--          <div class="banner-info-block__top&#45;&#45;name">-->
+      <!--            <p>Li pin hin</p>-->
+      <!--            <p>creator QR SOCIAL</p>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="banner-info-block__content">-->
+      <!--         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>-->
+      <!--        </div>-->
+      <!--      </div>-->
     </section>
     <section class="features">
       <div class="container">
         <div class="features-big-wrapper">
+           <img src="/features-img-2.png" alt="">
           <div class="features-text-item">
-            <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
-            <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
+              <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
+              <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
           </div>
-          <div class="">
-            <img src="/features-img-2.png" alt="">
-          </div>
-          <div class="">
-            <img src="/features-img-4.png" alt="">
-          </div>
+
           <div class="features-text-item">
-            <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
-            <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
+              <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
+              <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
           </div>
+          <img src="/features-img-4.png" alt="">
           <div class="features-text-item">
-            <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
-            <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
-          </div>
-          <div class="">
             <img src="/feature-img-1.png" alt="">
-          </div>
-          <div class="">
-            <img src="/features-img-3.png" alt="">
+            <div class="">
+              <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
+              <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
+
+            </div>
           </div>
           <div class="features-text-item">
-            <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
-            <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
+            <div class="">
+              <p class="features-text-item__title">少儿英语信息技术（IT）编程课程</p>
+              <p class="features-text-item__text">编程是一个很大的领域，不仅包括数学和逻辑学，还包括处理信息和算法的能力 我们教授您的孩子从入门到高层次知识，期间考虑了所有学习的特殊性，使课堂变得有趣且具吸引力——并为此设计了一个阶段性学习系统。</p>
+
+            </div>
+            <img src="/features-img-3.png" alt="">
           </div>
 
 
 
         </div>
 
+      </div>
+    </section>
+
+    <section class="features-v2">
+      <div class="container">
+        <div class="features-v2-item align-left">
+          <img class="features-v2-item__image pos-left" src="/f-v2-i1.png" alt="">
+          <img src="http://placehold.it/515x220" alt="">
+          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
+          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+        </div>
+        <div class="features-v2-item ">
+          <img class="features-v2-item__image pos-right" src="/f-v2-i1.png" alt="">
+          <img src="http://placehold.it/515x220" alt="">
+          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
+          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+        </div>
       </div>
     </section>
     <p class="section-header style-outline text-center mb-60">女孩名单</p>
@@ -82,30 +122,30 @@
 
             </nuxt-link>
           </div>
-           <div class="model-item">
-          <nuxt-link to="/girl-profile">
-            <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-            <div class="model-item__img">
-              <img src="https://media.gettyimages.com/photos/serene-beauty-picture-id1083617440?s=2048x2048" alt="">
-            </div>
-            <p class="model-item__name">Alice Krystal</p>
-            <p class="model-item__login">@kistochka</p>
+          <div class="model-item">
+            <nuxt-link to="/girl-profile">
+              <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
+              <div class="model-item__img">
+                <img src="https://media.gettyimages.com/photos/serene-beauty-picture-id1083617440?s=2048x2048" alt="">
+              </div>
+              <p class="model-item__name">Alice Krystal</p>
+              <p class="model-item__login">@kistochka</p>
 
 
-          </nuxt-link>
-        </div>
-           <div class="model-item">
-          <nuxt-link to="/girl-profile">
-            <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-            <div class="model-item__img">
-              <img src="https://media.gettyimages.com/photos/beautiful-woman-picture-id927570754?s=2048x2048" alt="">
-            </div>
-            <p class="model-item__name">Alice Krystal</p>
-            <p class="model-item__login">@kistochka</p>
+            </nuxt-link>
+          </div>
+          <div class="model-item">
+            <nuxt-link to="/girl-profile">
+              <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
+              <div class="model-item__img">
+                <img src="https://media.gettyimages.com/photos/beautiful-woman-picture-id927570754?s=2048x2048" alt="">
+              </div>
+              <p class="model-item__name">Alice Krystal</p>
+              <p class="model-item__login">@kistochka</p>
 
 
-          </nuxt-link>
-        </div>
+            </nuxt-link>
+          </div>
 
 
         </div>
@@ -292,7 +332,7 @@
         </div>
       </div>
     </section><!--tariffs-->
-     <p style="margin-bottom: 100px" class="section-header style-outline text-center ">女孩名单</p>
+    <p style="margin-bottom: 100px" class="section-header style-outline text-center ">女孩名单</p>
 
     <section class="groups">
       <div class="container">
@@ -446,6 +486,64 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <vs-collapse class="mb-40">
+      <vs-collapse-item>
+        <div slot="header">
+          我们爱坦克世界?
+        </div>
+        <p>
+          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+        </p>
+      </vs-collapse-item>
+
+    </vs-collapse>
+        <vs-collapse class="mb-40">
+      <vs-collapse-item>
+        <div slot="header">
+          我们爱坦克世界?
+        </div>
+        <p>
+          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+        </p>
+      </vs-collapse-item>
+
+    </vs-collapse>
+        <vs-collapse>
+      <vs-collapse-item>
+        <div slot="header">
+          我们爱坦克世界?
+        </div>
+        <p>
+          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+        </p>
+      </vs-collapse-item>
+
+    </vs-collapse>
+    </div>
+
+    <vs-popup class="holamundo" title="关于我们"  :active.sync="infoModal">
+      <div class="banner-info-block">
+        <div class="banner-info-block__top">
+
+          <img class="banner-info-block__top--img" src="/lip.webp" alt="">
+
+          <div class="banner-info-block__top--name">
+            <p>Li pin hin</p>
+            <p>creator QR SOCIAL</p>
+          </div>
+        </div>
+        <div class="banner-info-block__content mb-20">
+          <p class="section-subheader mb-10">关于我们</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>
+        </div>
+        <div class="banner-info-block__content">
+          <p class="section-subheader mb-10">关于我们</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>
+        </div>
+      </div>
+
+    </vs-popup>
   </div>
 </template>
 
@@ -464,10 +562,31 @@
       return {
 
         showSideBlock:false,
+        infoModal:false,
       }
     },
 
   }
 </script>
 
+<style>
+  .vs-collapse{
+    background: #FDFDFD;
+border-radius: 8px;
+  }
+  .vs-collapse-item--header .vs-icon{
+    font-size: 2rem;
+  }
+  .vs-collapse-item--header{
+    font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height */
 
+
+letter-spacing: 0.05em;
+
+color: #545454;
+  }
+
+</style>

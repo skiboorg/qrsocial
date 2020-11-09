@@ -5,7 +5,8 @@
     max-width: 1000px
     margin: 0 auto
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    //grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
     grid-gap: 10px
 
 
@@ -13,7 +14,7 @@
   position: relative
   background: $blue-gradient
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
-  border-radius: 40px
+  border-radius: 8px
   width: 270px
   margin: 0 auto
   padding: 2px
@@ -36,7 +37,7 @@
   &__wrapper
     padding: 50px 0 30px 0
     background: #FFFFff
-    border-radius: 40px
+    border-radius: 8px
     display: flex
     flex-direction: column
     align-items: center
@@ -79,7 +80,7 @@
   position: relative
   background: $orange-gradient
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
-  border-radius: 40px
+  border-radius: 8px
   max-width: 390px
   padding: 2px
   &::before
@@ -100,7 +101,7 @@
   &__wrapper
     padding: 80px 0 30px 0
     background: #FFFFff
-    border-radius: 40px
+    border-radius: 8px
     display: flex
     flex-direction: column
     align-items: center
@@ -144,7 +145,7 @@
   position: relative
   background: #FFFFff
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
-  border-radius: 40px
+  border-radius: 8px
   width: 270px
   margin: 0 auto
   padding: 2px
@@ -167,7 +168,7 @@
   &__wrapper
     padding: 50px 0 30px 0
     background: $blue-gradient
-    border-radius: 40px
+    border-radius: 8px
     display: flex
     flex-direction: column
     align-items: center

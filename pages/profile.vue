@@ -71,7 +71,7 @@
               </p>
             </div>
           </div>
-          <transition name = "fade">
+
             <div v-show="activeTab==='userInfo'" class="profile-right">
               <div @click="activeTab='userVip'" class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -128,8 +128,8 @@
 
               </div>
             </div>
-          </transition>
-          <transition name = "fade">
+
+
             <div v-show="activeTab==='userFriends'" class="profile-right">
               <div class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -240,8 +240,8 @@
           </div>
               </div>
             </div>
-          </transition>
-          <transition name = "fade">
+
+
             <div v-show="activeTab==='userFavorites'" class="profile-right">
               <div class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -409,8 +409,8 @@
           </div>
               </div>
             </div>
-          </transition>
-          <transition name = "fade">
+
+
             <div v-show="activeTab==='userSettings'" class="profile-right">
               <div class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -457,8 +457,7 @@
                 </div>
               </div>
             </div>
-          </transition>
-          <transition name = "fade">
+
             <div v-show="activeTab==='userChat'" class="profile-right">
               <div class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -584,8 +583,8 @@
                 </div>
               </div>
             </div>
-          </transition>
-          <transition name = "fade">
+
+
             <div v-show="activeTab==='userVip'" class="profile-right">
               <div class="block-rounded p20 profile-balance">
                 <img src="/profile-balance-icon.png" alt="">
@@ -611,7 +610,7 @@
               <img src="/p-vip_img-4.png" alt="">
               <img src="/p-vip_img-5.png" alt="">
             </div>
-          </transition>
+
         </div>
       </div>
     </section>
