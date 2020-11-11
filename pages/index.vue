@@ -101,26 +101,26 @@
         <div class="features-v2-item align-left">
           <img class="features-v2-item__image pos-left" src="/f-v2-i1.png" alt="">
           <img src="/f-v2-img1.png" alt="">
-          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
-          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+          <p class="section-subheader mb-10">个人资料</p>
+          <p>每个女孩都填写自己的个人资料：她的兴趣，喜欢的电影和音乐类型，书籍和兴趣爱好</p>
         </div>
         <div class="features-v2-item ">
           <img class="features-v2-item__image pos-right" src="/f-v2-i2.png" alt="">
           <img src="/f-v2-img2.png" alt="">
-          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
-          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+          <p class="section-subheader mb-10">通讯与广播</p>
+          <p>女孩为您启动广播并等待响应！ 给她的每条信息，每一份礼物和关注都很重要。 您越活跃，女孩的评价就越高。</p>
         </div>
           <div class="features-v2-item align-left">
           <img class="features-v2-item__image pos-left" src="/f-v2-i3.png" alt="">
           <img src="/f-v2-img3.png" alt="">
-          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
-          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+          <p class="section-subheader mb-10">学习语言和文化</p>
+          <p>在交流过程中，女孩学习汉语和中国文化，学习有关这个美丽国家的信息，并准备搬家</p>
         </div>
         <div class="features-v2-item ">
           <img class="features-v2-item__image pos-right" src="/f-v2-i4.png" alt="">
           <img src="/f-v2-img4.png" alt="">
-          <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
-          <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
+          <p class="section-subheader mb-10">计算收视率和中国之行</p>
+          <p>在六个月的最后，我们将计算出评分最高的女孩，并派她们去中国学习和旅行！ 您将能够与他们见面并聊天，参加常规活动并享有独特的体验！</p>
         </div>
       </div>
     </section>
@@ -548,6 +548,43 @@
 
     </div>
 
+      <div class="container">
+        <p class="section-header style-simple text-center mb-60">有关我们<span>平台的问</span>题的答案</p>
+        <div class="block-rounded p20">
+             <vs-table :data="users">
+
+
+
+      <template slot-scope="{data}">
+        <vs-tr :key="indextr" v-for="(tr, indextr) in data" >
+           <vs-td :data="data[indextr].id">
+            {{data[indextr].id}}
+          </vs-td>
+           <vs-td :data="data[indextr].img">
+             <img style="width: 40px;height: 40px;border-radius: 100%; object-fit: cover" :src="data[indextr].img" alt="">
+
+          </vs-td>
+          <vs-td :data="data[indextr].rating">
+            {{data[indextr].rating}}
+          </vs-td>
+
+          <vs-td :data="data[indextr].name">
+            {{data[indextr].name}}
+          </vs-td>
+
+          <vs-td :data="data[indextr].login">
+            {{data[indextr].login}}
+          </vs-td>
+
+
+        </vs-tr>
+      </template>
+    </vs-table>
+        </div>
+
+      </div>
+
+
     <vs-popup class="holamundo" title="关于我们"  :active.sync="infoModal">
       <div class="banner-info-block">
         <div class="banner-info-block__top">
@@ -596,6 +633,45 @@
 
         showSideBlock:false,
         infoModal:false,
+        users:[
+      {
+        "id": 1,
+        "img":'https://media.gettyimages.com/photos/teenage-beauty-picture-id1126913832?s=2048x2048',
+        "rating": "512 #1",
+        "name": "LIZA MARKINA",
+        "login": "@NATRY",
+      },
+          {
+        "id": 2,
+        "img":'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        "rating": "451 #2",
+        "name": "LENKAA",
+        "login": "@GODDESS",
+      },
+          {
+        "id": 3,
+        "img":'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        "rating": "123 #3",
+        "name": "KITTY PRETTY",
+        "login": "@user12",
+      },
+          {
+        "id": 4,
+        "img":'https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        "rating": "55 #4",
+        "name": "LENKAA",
+        "login": "@441",
+      },
+          {
+        "id": 5,
+        "img":'https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        "rating": "41 #5",
+        "name": "LENKAA",
+        "login": "@juiafuiui",
+      },
+
+
+    ]
       }
     },
 

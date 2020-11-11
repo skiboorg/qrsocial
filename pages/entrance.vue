@@ -2,43 +2,59 @@
   <div>
     <section class="girl-login-page">
       <div class="container entrance-top">
-        <img src="http://placehold.it/590x190" alt="">
-      <img src="http://placehold.it/590x190" alt="">
+        <img src="/e1.png" alt="">
+      <img src="/e2.png" alt="">
       </div>
       <div class="entrance-form">
         <vs-tabs>
-      <vs-tab label="Вход">
+      <vs-tab label="登录到您的个人帐户">
         <div class="con-tab-ejemplo">
             <vs-card  class="cardx girl-login">
 
 
-        <div style="padding: 20px 60px">
-           <vs-input style="width: 100%;margin-bottom: 30px"  size="large" label-placeholder="ваша почта" v-model="value1"/>
-           <vs-input style="width: 100%;margin-bottom: 10px"  size="large" label-placeholder="ваш телефон" v-model="value2"/>
-          <p style="text-align: end;margin-bottom: 20px">ЗАБЫЛИ ПАРОЛЬ?</p>
+        <div >
+           <vs-input style="width: 100%;margin-bottom: 10px"  size="large" label-placeholder="输入您的登录名" v-model="value1"/>
+           <vs-input style="width: 100%;margin-bottom: 50px"  size="large" label-placeholder="输入密码" v-model="value2"/>
 
 
-          <nuxt-link to="/girl-lk"><vs-button style="width: 100%;margin-bottom: 10px" color="success" type="gradient">войти в личный кабинет</vs-button></nuxt-link>
-          <nuxt-link to="/girl-login-s1"> <vs-button style="width: 100%;margin-bottom: 10px" color="danger" type="gradient">зарегистрироваться</vs-button></nuxt-link>
+        <div style="display: flex; align-items: center;justify-content: space-between" class="">
+          <nuxt-link style="color: #FFFFff; margin-right: 20px" to="/girl-lk"><div style="padding: 10px; width: 230px" class="btn btn-l-blue-solid">输入您的个人帐户</div></nuxt-link>
+          <nuxt-link to="/girl-login-s1">  <div style=" width: 230px" class="btn btn-outline btn-outline-d-blue">
+                  <div  style="padding: 10px" class="btn-outline-inner">
+                    <p>
+                      忘记密码或无法访问？
+                    </p>
+                  </div>
+                </div></nuxt-link>
+        </div>
+
 
         </div>
 
       </vs-card>
         </div>
       </vs-tab>
-      <vs-tab label="Регистрация">
+      <vs-tab label="在我们的门户网站上注册">
         <div class="con-tab-ejemplo">
-           <vs-card  class="cardx girl-login">
+              <vs-card  class="cardx girl-login">
 
 
-        <div style="padding: 20px 60px">
-           <vs-input style="width: 100%;margin-bottom: 30px"  size="large" label-placeholder="ваша почта" v-model="value1"/>
-           <vs-input style="width: 100%;margin-bottom: 10px"  size="large" label-placeholder="ваш телефон" v-model="value2"/>
-          <p style="text-align: end;margin-bottom: 20px">ЗАБЫЛИ ПАРОЛЬ?</p>
+        <div >
+           <vs-input style="width: 100%;margin-bottom: 10px"  size="large" label-placeholder="输入您的登录名" v-model="value1"/>
+           <vs-input style="width: 100%;margin-bottom: 50px"  size="large" label-placeholder="输入密码" v-model="value2"/>
 
 
-          <nuxt-link to="/girl-lk"><vs-button style="width: 100%;margin-bottom: 10px" color="success" type="gradient">войти в личный кабинет</vs-button></nuxt-link>
-          <nuxt-link to="/girl-login-s1"> <vs-button style="width: 100%;margin-bottom: 10px" color="danger" type="gradient">зарегистрироваться</vs-button></nuxt-link>
+        <div style="display: flex; align-items: center;justify-content: space-between" class="">
+          <nuxt-link style="color: #FFFFff; margin-right: 20px" to="/girl-lk"><div style="padding: 10px; width: 230px" class="btn btn-l-blue-solid">输入您的个人帐户</div></nuxt-link>
+          <nuxt-link to="/girl-login-s1">  <div style=" width: 230px" class="btn btn-outline btn-outline-d-blue">
+                  <div  style="padding: 10px" class="btn-outline-inner">
+                    <p>
+                      忘记密码或无法访问？
+                    </p>
+                  </div>
+                </div></nuxt-link>
+        </div>
+
 
         </div>
 

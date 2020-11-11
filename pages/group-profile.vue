@@ -9,7 +9,7 @@
           </div>
           <div class="group-profile-top__info">
             <div class="group-profile-top__info--name">
-              <p class="group-profile-top__info--name--title section-header style-simple">我们爱坦克世界</p>
+              <p class="group-profile-top__info--name--title ">我们爱坦克世界</p>
               <div class="group-profile-top__info--name--group">
                 <p>广播评级: 512</p>
                 <p>朋友们: 44</p>
@@ -17,8 +17,8 @@
               </div>
             </div>
             <div class="group-profile-top__info--buttons">
-              <div class="btn btn-blue btn-round"><p>text</p></div>
-              <div class="btn btn-blue btn-round"><p>text</p></div>
+                <div class="btn btn-l-blue-solid btn-hover-shadow"><p>加入小组</p></div>
+
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
                     <img src="https://www.wotcheatmods.com/wp-content/uploads/2020/04/440_wot_premium.png" alt="">
                   </div>
                   <div class="group-profile-post__top--name">
-                    <p>Group 1234</p>
+                    <p>我们爱坦克世界</p>
                     <p>6 hours ago</p>
                   </div>
                   <div class="group-profile-post__top--button">
