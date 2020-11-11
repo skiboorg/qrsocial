@@ -18,14 +18,14 @@
                   </div>
                 </div>
                 <div class="girl-profile-area__info--stats--item">
-                  <img src="/g-profile-stat-icon1.png" alt="">
+                  <img src="/g-profile-stat-icon2.png" alt="">
                   <div class="">
                     <p>7124</p>
                     <p>广播评级</p>
                   </div>
                 </div>
                 <div class="girl-profile-area__info--stats--item">
-                  <img src="/g-profile-stat-icon1.png" alt="">
+                  <img src="/g-profile-stat-icon3.png" alt="">
                   <div class="">
                     <p>7124</p>
                     <p>广播评级</p>
@@ -33,8 +33,10 @@
                 </div>
               </div>
               <div class="girl-profile-area__info--buttons">
-                <div class="btn btn-blue btn-round"><p>text</p></div>
-                <div class="btn btn-blue btn-round"><p>text</p></div>
+                <div class="btn btn-d-blue-solid btn-hover-shadow"><p>写一条消息</p></div>
+                <div class="btn btn-l-blue-solid btn-hover-shadow"><p>添加到朋友列表</p></div>
+                <div class="btn btn-green-solid btn-hover-shadow"><p>找出联络人</p></div>
+
               </div>
             </div>
             <div class="girl-profile-area__info--bottom">
@@ -47,10 +49,14 @@
         </div>
         <div class="girl-profile-menu">
           <div class="girl-profile-menu__item " @click="activeTab='userPosts'" :class="{'girlMenuItemActive':activeTab==='userPosts'}">
-               <svg class="girl-profile-menu__item--img" width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24.0197 12.3922L31.706 7.52943L24.1766 0L19.3139 10.8235L16.4903 2.35293L8.96094 7.37253L15.2354 12.3921H0.960938V22.4314H3.47074V40H34.5295V22.4314H37.0393V12.3922H24.0197ZM24.8116 3.29703L28.7514 7.23687L20.7148 12.3332L24.8116 3.29703ZM15.4839 5.2862L17.7085 11.9601L12.1469 7.51083L15.4839 5.2862ZM16.4903 37.4902H5.98054V21.6452H16.4903V37.4902ZM16.4903 19.9215H3.47074V14.902H16.4903V19.9215ZM32.0197 37.4902H21.5099V21.6452H32.0197V37.4902ZM34.5295 19.9215H21.5099V14.902H34.5295V19.9215Z" />
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.1667 35.2365H9.16667V12.8332H22V9.1665H9.16667C7.15 9.1665 5.5 10.8165 5.5 12.8332V34.8332C5.5 36.8498 7.15 38.4998 9.16667 38.4998H31.1667C33.1833 38.4998 34.8333 36.8498 34.8333 34.8332V21.9998H31.1667V35.2365Z" fill="#768187"/>
+              <path d="M34.8335 3.6665H31.1668V9.1665H25.6668C25.6852 9.18484 25.6668 12.8332 25.6668 12.8332H31.1668V18.3148C31.1852 18.3332 34.8335 18.3148 34.8335 18.3148V12.8332H40.3335V9.1665H34.8335V3.6665ZM12.8335 16.4998H27.5002V20.1665H12.8335V16.4998ZM12.8335 21.9998V25.6665H27.5002V21.9998H22.0002H12.8335ZM12.8335 27.4998H27.5002V31.1665H12.8335V27.4998Z" fill="#768187"/>
             </svg>
-            <p class="girl-profile-menu__item--text">关于我</p>
+
+
+
+            <p class="girl-profile-menu__item--text">帖子</p>
           </div>
           <div class="girl-profile-menu__item " @click="activeTab='userInfo'" :class="{'girlMenuItemActive':activeTab==='userInfo'}">
             <svg class="girl-profile-menu__item--img" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +113,7 @@
 
             <p class="girl-profile-menu__item--text">未来广播</p>
           </div>
-          <div class="girl-profile-menu__item ">
+          <div class="girl-profile-menu__item "  @click="activeTab='userGifts' " :class="{'girlMenuItemActive':activeTab==='userGifts'}">
             <svg class="girl-profile-menu__item--img" width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.0197 12.3922L31.706 7.52943L24.1766 0L19.3139 10.8235L16.4903 2.35293L8.96094 7.37253L15.2354 12.3921H0.960938V22.4314H3.47074V40H34.5295V22.4314H37.0393V12.3922H24.0197ZM24.8116 3.29703L28.7514 7.23687L20.7148 12.3332L24.8116 3.29703ZM15.4839 5.2862L17.7085 11.9601L12.1469 7.51083L15.4839 5.2862ZM16.4903 37.4902H5.98054V21.6452H16.4903V37.4902ZM16.4903 19.9215H3.47074V14.902H16.4903V19.9215ZM32.0197 37.4902H21.5099V21.6452H32.0197V37.4902ZM34.5295 19.9215H21.5099V14.902H34.5295V19.9215Z" />
             </svg>
@@ -116,113 +122,133 @@
           </div>
         </div>
         <div v-show="activeTab==='userPosts'" class="">
-           <div class="group-profile-wrapper">
-          <div class="group-profile-left">
-            <div class="block-rounded p50">
-              <p class="section-subheader mb-30">朋友们</p>
-              <p class="mb-20">Hi! My name is Karina but some people may know me as GameHuntress! I have a Twitch channel where
-                I stream, play and review all the newest games.
-              </p>
-              <div class="profile-user-info">
-                <p>Joined</p>
-                <p>March 26th, 2020</p>
-              </div>
-              <div class="profile-user-info">
-                <p>City</p>
-                <p>Moscow</p>
-              </div>
-              <div class="profile-user-info">
-                <p>Country</p>
-                <p>Russian Federation</p>
-              </div>
-            </div>
-            <div class="block-rounded p50">
-              <p class="section-subheader mb-30 ">朋友们</p>
-              <div class="girl-profile-friends">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <img src="/testw.png" alt="">
-                <div class="girl-profile-friends__more"><p>+ 999</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="group-profile-right">
-            <div class="group-profile-post">
-              <div class="group-profile-post__top">
-                <div class="group-profile-post__top--avatar">
-                  <img src="https://www.wotcheatmods.com/wp-content/uploads/2020/04/440_wot_premium.png" alt="">
-                </div>
-                <div class="group-profile-post__top--name">
-                  <p>Group 1234</p>
-                  <p>6 hours ago</p>
-                </div>
-                <div class="group-profile-post__top--button">
-                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.5 0C12.76 0 11.09 0.838692 10 2.16403C8.91 0.838692 7.24 0 5.5 0C2.42 0 0 2.50572 0 5.69482C0 9.60872 3.4 12.7978 8.55 17.6436L10 19L11.45 17.6332C16.6 12.7978 20 9.60872 20 5.69482C20 2.50572 17.58 0 14.5 0ZM10.1 16.1008L10 16.2044L9.9 16.1008C5.14 11.6381 2 8.68719 2 5.69482C2 3.62398 3.5 2.07084 5.5 2.07084C7.04 2.07084 8.54 3.09591 9.07 4.51444H10.94C11.46 3.09591 12.96 2.07084 14.5 2.07084C16.5 2.07084 18 3.62398 18 5.69482C18 8.68719 14.86 11.6381 10.1 16.1008Z" fill="#768187"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="group-profile-post__content">
-                <p>
-                  广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+          <div class="group-profile-wrapper">
+            <div class="group-profile-left">
+              <div class="block-rounded p50">
+                <p class="section-subheader mb-30">朋友们</p>
+                <p class="mb-20">Hi! My name is Karina but some people may know me as GameHuntress! I have a Twitch channel where
+                  I stream, play and review all the newest games.
                 </p>
-
-                <img src="https://picsum.photos/1920/600?image=435" alt="">
+                <div class="profile-user-info">
+                  <p>Joined</p>
+                  <p>March 26th, 2020</p>
+                </div>
+                <div class="profile-user-info">
+                  <p>City</p>
+                  <p>Moscow</p>
+                </div>
+                <div class="profile-user-info">
+                  <p>Country</p>
+                  <p>Russian Federation</p>
+                </div>
               </div>
-              <div class="group-profile-post__buttons">
-                <div class="group-profile-post__buttons--group">
-                  <div class="group-profile-post__button button-like">
-                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.6481 9.43206C16.9918 8.99125 17.182 8.45116 17.182 7.88922C17.182 6.99767 16.6686 6.15378 15.8422 5.68318C15.6295 5.56205 15.3873 5.49829 15.1406 5.49852H10.2356L10.3584 3.05817C10.387 2.46844 10.1722 1.90849 9.75495 1.48158C9.55017 1.27115 9.30311 1.10374 9.02905 0.989665C8.75498 0.875595 8.45973 0.817297 8.16154 0.818374C7.0979 0.818374 6.157 1.51335 5.87472 2.50815L4.11768 8.68348H1.4729C1.11086 8.68348 0.818359 8.96742 0.818359 9.31888V16.5466C0.818359 16.898 1.11086 17.182 1.4729 17.182H13.7722C13.9604 17.182 14.1445 17.1463 14.3143 17.0748C15.2879 16.6717 15.9159 15.7484 15.9159 14.7238C15.9159 14.4736 15.879 14.2274 15.8054 13.9891C16.149 13.5483 16.3393 13.0082 16.3393 12.4463C16.3393 12.1961 16.3025 11.9498 16.2288 11.7116C16.5724 11.2708 16.7627 10.7307 16.7627 10.1687C16.7586 9.91854 16.7218 9.67034 16.6481 9.43206ZM2.29109 15.7523V10.1131H3.9479V15.7523H2.29109ZM15.3084 8.74304L14.8604 9.12032L15.1447 9.62467C15.2384 9.79081 15.287 9.97735 15.2859 10.1667C15.2859 10.4944 15.1386 10.8061 14.8849 11.0206L14.437 11.3978L14.7213 11.9022C14.815 12.0683 14.8636 12.2549 14.8624 12.4443C14.8624 12.7719 14.7152 13.0836 14.4615 13.2981L14.0136 13.6754L14.2979 14.1797C14.3916 14.3459 14.4401 14.5324 14.439 14.7218C14.439 15.1666 14.169 15.5677 13.7518 15.7504H5.257V10.0496L7.29222 2.89138C7.3447 2.70791 7.45736 2.54604 7.61312 2.43031C7.76888 2.31457 7.95926 2.25128 8.1554 2.25002C8.31086 2.25002 8.46427 2.2937 8.587 2.38305C8.78949 2.52999 8.8979 2.75238 8.88563 2.98867L8.68927 6.92817H15.1202C15.4843 7.14461 15.7093 7.50997 15.7093 7.88922C15.7093 8.21685 15.562 8.52661 15.3084 8.74304Z" fill="white"/>
+              <div class="block-rounded p50">
+                <p class="section-subheader mb-30 ">朋友们</p>
+                <div class="girl-profile-friends">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <img src="/testw.png" alt="">
+                  <div class="girl-profile-friends__more"><p>+ 999</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="group-profile-right">
+              <div class="group-profile-post">
+                <div class="group-profile-post__top">
+                  <div class="group-profile-post__top--avatar">
+                    <img src="https://www.wotcheatmods.com/wp-content/uploads/2020/04/440_wot_premium.png" alt="">
+                  </div>
+                  <div class="group-profile-post__top--name">
+                    <p>Group 1234</p>
+                    <p>6 hours ago</p>
+                  </div>
+                  <div class="group-profile-post__top--button">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 0C12.76 0 11.09 0.838692 10 2.16403C8.91 0.838692 7.24 0 5.5 0C2.42 0 0 2.50572 0 5.69482C0 9.60872 3.4 12.7978 8.55 17.6436L10 19L11.45 17.6332C16.6 12.7978 20 9.60872 20 5.69482C20 2.50572 17.58 0 14.5 0ZM10.1 16.1008L10 16.2044L9.9 16.1008C5.14 11.6381 2 8.68719 2 5.69482C2 3.62398 3.5 2.07084 5.5 2.07084C7.04 2.07084 8.54 3.09591 9.07 4.51444H10.94C11.46 3.09591 12.96 2.07084 14.5 2.07084C16.5 2.07084 18 3.62398 18 5.69482C18 8.68719 14.86 11.6381 10.1 16.1008Z" fill="#768187"/>
                     </svg>
                   </div>
-                  <p>12</p>
                 </div>
-                <div class="group-profile-post__buttons--group">
-                <div class="group-profile-post__button button-favorite">
-                  <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.682 0.181641C11.2584 0.181641 9.892 0.903959 9.00018 2.0454C8.10836 0.903959 6.742 0.181641 5.31836 0.181641C2.79836 0.181641 0.818359 2.33968 0.818359 5.08627C0.818359 8.45709 3.60018 11.2037 7.81381 15.3771L9.00018 16.5453L10.1865 15.3682C14.4002 11.2037 17.182 8.45709 17.182 5.08627C17.182 2.33968 15.202 0.181641 12.682 0.181641ZM9.082 14.0484L9.00018 14.1375L8.91836 14.0484C5.02381 10.2049 2.45472 7.66343 2.45472 5.08627C2.45472 3.30277 3.682 1.96514 5.31836 1.96514C6.57836 1.96514 7.80563 2.84798 8.23927 4.06968H9.76927C10.1947 2.84798 11.422 1.96514 12.682 1.96514C14.3184 1.96514 15.5456 3.30277 15.5456 5.08627C15.5456 7.66343 12.9765 10.2049 9.082 14.0484Z" fill="white"/>
-                  </svg>
+                <div class="group-profile-post__content">
+                  <p>
+                    广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+                  </p>
+
+                  <img src="https://picsum.photos/1920/600?image=435" alt="">
                 </div>
-                  <p>3</p>
-                </div>
-                <div class="group-profile-post__buttons--group">
-                <div class="group-profile-post__button button-comment">
-                  <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.91016 4.90918H13.092V6.54554H4.91016V4.90918ZM4.91016 8.18191H10.6374V9.81827H4.91016V8.18191Z" fill="white"/>
-                    <path d="M15.5456 0.818359H2.45472C1.55227 0.818359 0.818359 1.55227 0.818359 2.45472V17.182L5.18172 13.9093H15.5456C16.4481 13.9093 17.182 13.1754 17.182 12.2729V2.45472C17.182 1.55227 16.4481 0.818359 15.5456 0.818359ZM15.5456 12.2729H4.63681L2.45472 13.9093V2.45472H15.5456V12.2729Z" fill="white"/>
-                  </svg>
-                </div>
-                  <p>8</p>
+                <!--                <div class="group-profile-post__buttons">-->
+                <!--                  <div class="group-profile-post__buttons&#45;&#45;group">-->
+                <!--                    <div class="group-profile-post__button button-like">-->
+                <!--                      <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                        <path d="M16.6481 9.43206C16.9918 8.99125 17.182 8.45116 17.182 7.88922C17.182 6.99767 16.6686 6.15378 15.8422 5.68318C15.6295 5.56205 15.3873 5.49829 15.1406 5.49852H10.2356L10.3584 3.05817C10.387 2.46844 10.1722 1.90849 9.75495 1.48158C9.55017 1.27115 9.30311 1.10374 9.02905 0.989665C8.75498 0.875595 8.45973 0.817297 8.16154 0.818374C7.0979 0.818374 6.157 1.51335 5.87472 2.50815L4.11768 8.68348H1.4729C1.11086 8.68348 0.818359 8.96742 0.818359 9.31888V16.5466C0.818359 16.898 1.11086 17.182 1.4729 17.182H13.7722C13.9604 17.182 14.1445 17.1463 14.3143 17.0748C15.2879 16.6717 15.9159 15.7484 15.9159 14.7238C15.9159 14.4736 15.879 14.2274 15.8054 13.9891C16.149 13.5483 16.3393 13.0082 16.3393 12.4463C16.3393 12.1961 16.3025 11.9498 16.2288 11.7116C16.5724 11.2708 16.7627 10.7307 16.7627 10.1687C16.7586 9.91854 16.7218 9.67034 16.6481 9.43206ZM2.29109 15.7523V10.1131H3.9479V15.7523H2.29109ZM15.3084 8.74304L14.8604 9.12032L15.1447 9.62467C15.2384 9.79081 15.287 9.97735 15.2859 10.1667C15.2859 10.4944 15.1386 10.8061 14.8849 11.0206L14.437 11.3978L14.7213 11.9022C14.815 12.0683 14.8636 12.2549 14.8624 12.4443C14.8624 12.7719 14.7152 13.0836 14.4615 13.2981L14.0136 13.6754L14.2979 14.1797C14.3916 14.3459 14.4401 14.5324 14.439 14.7218C14.439 15.1666 14.169 15.5677 13.7518 15.7504H5.257V10.0496L7.29222 2.89138C7.3447 2.70791 7.45736 2.54604 7.61312 2.43031C7.76888 2.31457 7.95926 2.25128 8.1554 2.25002C8.31086 2.25002 8.46427 2.2937 8.587 2.38305C8.78949 2.52999 8.8979 2.75238 8.88563 2.98867L8.68927 6.92817H15.1202C15.4843 7.14461 15.7093 7.50997 15.7093 7.88922C15.7093 8.21685 15.562 8.52661 15.3084 8.74304Z" fill="white"/>-->
+                <!--                      </svg>-->
+                <!--                    </div>-->
+                <!--                    <p>12</p>-->
+                <!--                  </div>-->
+                <!--                  <div class="group-profile-post__buttons&#45;&#45;group">-->
+                <!--                    <div class="group-profile-post__button button-favorite">-->
+                <!--                      <svg width="16" height="16" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                        <path d="M12.682 0.181641C11.2584 0.181641 9.892 0.903959 9.00018 2.0454C8.10836 0.903959 6.742 0.181641 5.31836 0.181641C2.79836 0.181641 0.818359 2.33968 0.818359 5.08627C0.818359 8.45709 3.60018 11.2037 7.81381 15.3771L9.00018 16.5453L10.1865 15.3682C14.4002 11.2037 17.182 8.45709 17.182 5.08627C17.182 2.33968 15.202 0.181641 12.682 0.181641ZM9.082 14.0484L9.00018 14.1375L8.91836 14.0484C5.02381 10.2049 2.45472 7.66343 2.45472 5.08627C2.45472 3.30277 3.682 1.96514 5.31836 1.96514C6.57836 1.96514 7.80563 2.84798 8.23927 4.06968H9.76927C10.1947 2.84798 11.422 1.96514 12.682 1.96514C14.3184 1.96514 15.5456 3.30277 15.5456 5.08627C15.5456 7.66343 12.9765 10.2049 9.082 14.0484Z" fill="white"/>-->
+                <!--                      </svg>-->
+                <!--                    </div>-->
+                <!--                    <p>3</p>-->
+                <!--                  </div>-->
+                <!--                  <div class="group-profile-post__buttons&#45;&#45;group">-->
+                <!--                    <div class="group-profile-post__button button-comment">-->
+                <!--                      <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                        <path d="M4.91016 4.90918H13.092V6.54554H4.91016V4.90918ZM4.91016 8.18191H10.6374V9.81827H4.91016V8.18191Z" fill="white"/>-->
+                <!--                        <path d="M15.5456 0.818359H2.45472C1.55227 0.818359 0.818359 1.55227 0.818359 2.45472V17.182L5.18172 13.9093H15.5456C16.4481 13.9093 17.182 13.1754 17.182 12.2729V2.45472C17.182 1.55227 16.4481 0.818359 15.5456 0.818359ZM15.5456 12.2729H4.63681L2.45472 13.9093V2.45472H15.5456V12.2729Z" fill="white"/>-->
+                <!--                      </svg>-->
+                <!--                    </div>-->
+                <!--                    <p>8</p>-->
+                <!--                  </div>-->
+
+                <!--                </div>-->
+                <div class="group-profile-post__divider"></div>
+                <div class="group-profile-post__bottom">
+                  <div class="btn btn-grey-outline">
+                    <div class=" btn-grey-outline__group">
+                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 0C12.76 0 11.09 0.838692 10 2.16403C8.91 0.838692 7.24 0 5.5 0C2.42 0 0 2.50572 0 5.69482C0 9.60872 3.4 12.7978 8.55 17.6436L10 19L11.45 17.6332C16.6 12.7978 20 9.60872 20 5.69482C20 2.50572 17.58 0 14.5 0ZM10.1 16.1008L10 16.2044L9.9 16.1008C5.14 11.6381 2 8.68719 2 5.69482C2 3.62398 3.5 2.07084 5.5 2.07084C7.04 2.07084 8.54 3.09591 9.07 4.51444H10.94C11.46 3.09591 12.96 2.07084 14.5 2.07084C16.5 2.07084 18 3.62398 18 5.69482C18 8.68719 14.86 11.6381 10.1 16.1008Z" fill="#5753E8"/>
+                      </svg>
+                      <p>3</p>
+                    </div>
+                    <span>喜欢</span>
+                  </div>
+                     <div class="btn btn-grey-outline">
+                    <div class=" btn-grey-outline__group">
+<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.75 4.41113H14.25V6.17542H4.75V4.41113ZM4.75 7.9397H11.4V9.70399H4.75V7.9397Z" fill="#40C3E0"/>
+<path d="M17.1 0H1.9C0.85215 0 0 0.791282 0 1.76429V17.6429L5.06635 14.1143H17.1C18.1479 14.1143 19 13.323 19 12.35V1.76429C19 0.791282 18.1479 0 17.1 0ZM17.1 12.35H4.43365L1.9 14.1143V1.76429H17.1V12.35Z" fill="#40C3E0"/>
+</svg>
+
+                      <p>8</p>
+                    </div>
+                    <span>发表您的评论</span>
+                  </div>
+                 <div class="btn btn-grey-outline">
+                    <div class=" btn-grey-outline__group">
+<svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.46094 3.46191H10.3843V4.84658H3.46094V3.46191ZM3.46094 6.23125H8.30727V7.61592H3.46094V6.23125Z" fill="#2F5FDA"/>
+<path d="M12.462 0H1.38467C0.621023 0 0 0.621023 0 1.38467V13.8467L3.69222 11.0773H12.462C13.2256 11.0773 13.8467 10.4563 13.8467 9.69267V1.38467C13.8467 0.621023 13.2256 0 12.462 0ZM12.462 9.69267H3.23112L1.38467 11.0773V1.38467H12.462V9.69267Z" fill="#2F5FDA"/>
+<path d="M22.8477 7.61523H15.9243V8.9999H22.8477V7.61523ZM22.8477 10.3846H18.0013V11.7692H22.8477V10.3846Z" fill="#2F5FDA"/>
+<path d="M13.8466 4.15332H24.9239C25.6876 4.15332 26.3086 4.77434 26.3086 5.53799V18L22.6164 15.2307H13.8466C13.0829 15.2307 12.4619 14.6096 12.4619 13.846V5.53799C12.4619 4.77434 13.0829 4.15332 13.8466 4.15332ZM13.8466 13.846H23.0775L24.9239 15.2307V5.53799H13.8466V13.846Z" fill="#2F5FDA"/>
+</svg>
+
+
+
+                    </div>
+                    <span>查看所有评论</span>
+                  </div>
+
                 </div>
 
               </div>
-              <div class="group-profile-post__divider"></div>
-              <div class="group-profile-post__bottom">
-                <div class="btn btn-blue">
-                  <p>
-                    喜欢
-                  </p>
-                </div>
-                <div class="btn btn-blue">
-                  <p>
-                    喜欢
-                  </p>
-                </div>
-                <div class="btn btn-blue">
-                  <p>
-                    喜欢
-                  </p>
-                </div>
-              </div>
-
             </div>
           </div>
-        </div>
         </div>
         <div v-show="activeTab==='userInfo'" class="girl-profile-wrapper">
           <div class="girl-profile-left">
@@ -298,35 +324,35 @@
         <div v-show="activeTab==='userFriends'" class="">
           <div class="models-wrapper">
 
-                <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
-
-                </div>
-               <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
-
-                </div>
-               <div class="model-item">
-                  <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
-                  <div class="model-item__img">
-                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
-                  </div>
-                  <p class="model-item__name">Alice Krystal</p>
-                  <p class="model-item__login">@kistochka</p>
-
-                </div>
-
+            <div class="model-item">
+              <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
+              <div class="model-item__img">
+                <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
               </div>
+              <p class="model-item__name">Alice Krystal</p>
+              <p class="model-item__login">@kistochka</p>
+
+            </div>
+            <div class="model-item">
+              <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
+              <div class="model-item__img">
+                <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
+              </div>
+              <p class="model-item__name">Alice Krystal</p>
+              <p class="model-item__login">@kistochka</p>
+
+            </div>
+            <div class="model-item">
+              <div class="model-item__bg" style="background: url(/test_bg.png)"></div>
+              <div class="model-item__img">
+                <img src="https://media.gettyimages.com/photos/portrait-of-a-young-malay-man-in-a-modern-office-picture-id1178688517?s=2048x2048" alt="">
+              </div>
+              <p class="model-item__name">Alice Krystal</p>
+              <p class="model-item__login">@kistochka</p>
+
+            </div>
+
+          </div>
         </div><!--        userFriends-->
         <div v-show="activeTab==='userGallery'" class="girl-profile-gallery">
           <p class="section-subheader mb-50">专辑 3</p>
@@ -399,201 +425,210 @@
           </vs-popup>
         </div><!--        userGalleryTab-->
         <div v-show="activeTab==='userStreamTab'" class="">
-            <div class="streams-wrapper">
-       <div class="stream-item ">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+          <div class="streams-wrapper">
+            <div class="stream-item ">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
-            </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-          <div class="stream-item ">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
+              </nuxt-link>
             </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-           <div class="stream-item stream-vip">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+            <div class="stream-item ">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
-            </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-          <div class="stream-item stream-vip">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
+              </nuxt-link>
             </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-              <div class="stream-item ">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+            <div class="stream-item stream-vip">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
-            </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-          <div class="stream-item ">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
+              </nuxt-link>
             </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-           <div class="stream-item stream-vip">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+            <div class="stream-item stream-vip">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
-            </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
-            </div>
-            </nuxt-link>
-          </div>
-          <div class="stream-item stream-vip">
-            <nuxt-link to="/stream">
-            <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
-              <div class="stream-item__top-btn">
-                <div class="stream-item__top-btn--inner">
-                  <img draggable="false" src="/play_icon.png" alt="">
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="stream-item__top-for-vip">
-                <img draggable="false" src="/stream_for_vip_icon.png" alt="">
-                <p>只限VIP</p>
-              </div>
+              </nuxt-link>
             </div>
-            <div class="stream-item__bottom">
-              <div class="stream-item__bottom--left">
-                <p>玛丽的追求</p>
-                <p>4小时前上传</p>
-              </div>
-              <div class="stream-item__bottom--right">
-                <img draggable="false" src="http://placehold.it/300" alt="">
-              </div>
+            <div class="stream-item ">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
+                </div>
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
+                </div>
+              </nuxt-link>
             </div>
-            </nuxt-link>
+            <div class="stream-item ">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
+                </div>
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
+            <div class="stream-item stream-vip">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
+                </div>
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
+            <div class="stream-item stream-vip">
+              <nuxt-link to="/stream">
+                <div class="stream-item__top" style="background: linear-gradient(black, black), url(https://media.gettyimages.com/photos/young-beautiful-woman-picture-id1050903354?s=2048x2048) no-repeat center">
+                  <div class="stream-item__top-btn">
+                    <div class="stream-item__top-btn--inner">
+                      <img draggable="false" src="/play_icon.png" alt="">
+                    </div>
+                  </div>
+                  <div class="stream-item__top-for-vip">
+                    <img draggable="false" src="/stream_for_vip_icon.png" alt="">
+                    <p>只限VIP</p>
+                  </div>
+                </div>
+                <div class="stream-item__bottom">
+                  <div class="stream-item__bottom--left">
+                    <p>玛丽的追求</p>
+                    <p>4小时前上传</p>
+                  </div>
+                  <div class="stream-item__bottom--right">
+                    <img draggable="false" src="http://placehold.it/300" alt="">
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
           </div>
-        </div>
         </div><!--        userStreamTab-->
+        <div v-show="activeTab==='userGifts'" class="girl-profile-wrapper">
+             <div class="girl-profile-left">
+               <img src="/f-img1.png" alt="">
+          </div>
+          <div class="girl-profile-right">
+          <img class="mb-10" src="/f-img2.png" alt="">
+            <img src="/f-img3.png" alt="">
+          </div>
+        </div><!--        userGifts-->
       </div>
     </section>
   </div>

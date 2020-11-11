@@ -2,6 +2,10 @@ $blue-gradient: linear-gradient(135deg, #5753E8 0%, #28DEEF 100%)
 $gold-gradient: linear-gradient(180deg, #FFDFAE 0%, #BC8740 100%)
 $orange-gradient: linear-gradient(95.62deg, #EF422B 0%, #efdb28 99.74%)
 
+$color-d-blue: #5753E8
+$color-l-blue: #28DEEF
+$color-green: #30D0AA
+
 @font-face
 	font-family: 'Msyh'
 	src: url('/chinese.msyh.ttf')
@@ -34,7 +38,8 @@ body
 
 .text-center
   text-align: center
-
+.fs-22
+  font-size: 22px !important
 .section-header
   font-weight: bold
   letter-spacing: 0.05em
@@ -120,13 +125,21 @@ body
   justify-content: center
   padding: 8px 10px
   width: 160px
-  border-radius: 10px
+  border-radius: 8px
   cursor: pointer
+
   p
     font-weight: bold
     color: #ffffff
-  &.btn-blue-solid
-    background: #6E6AEC
+  &.btn-hover-shadow
+    &:hover
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+  &.btn-d-blue-solid
+    background: $color-d-blue
+  &.btn-l-blue-solid
+    background: $color-l-blue
+  &.btn-green-solid
+    background: $color-green
   &.btn-blue
     background: $blue-gradient
   &.btn-orange
@@ -137,22 +150,49 @@ body
       color: #000000 !important
   &.btn-w-img
     justify-content: space-between
-  &.btn-round
-    border-radius: 50px !important
+
+.btn-grey-outline
+  background: #FFFFFF
+  border: 1px solid #E8E8E8
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 10px 20px
+  &__group
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-basis: 35px
+  p
+
+    font-size: 14px
+    line-height: 24px
+    color: #586F7C
+  span
+    display: inline-block
+
+    font-size: 12px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #3E3442
 
 .btn-outline
-  border-radius: 50px !important
+  //border-radius: 50px !important
   padding: 1px
   &-inner
     background: #FFFFff
     padding: 8px 10px
     width: 100%
-    border-radius: 50px !important
+    border-radius: 8px !important
     p
       text-align: center
       background: $orange-gradient
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
+  &.btn-outline-grey
+    &-inner
+      background: #E8E8E8
   &.btn-outline-gold
     background: $orange-gradient
   &.btn-outline-blue
@@ -162,6 +202,16 @@ body
         background: $blue-gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+  &.btn-outline-d-blue
+    background: $color-d-blue
+    & .btn-outline-inner
+      p
+        color: $color-d-blue
+        background: #FFFFff
+        -webkit-background-clip: unset
+        -webkit-text-fill-color: unset
+  &.btn-outline-l-blue
+    background: $color-l-blue
 
 
 

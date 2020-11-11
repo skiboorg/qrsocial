@@ -100,25 +100,25 @@
       <div class="container">
         <div class="features-v2-item align-left">
           <img class="features-v2-item__image pos-left" src="/f-v2-i1.png" alt="">
-          <img src="http://placehold.it/515x220" alt="">
+          <img src="/f-v2-img1.png" alt="">
           <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
           <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
         </div>
         <div class="features-v2-item ">
           <img class="features-v2-item__image pos-right" src="/f-v2-i2.png" alt="">
-          <img src="http://placehold.it/515x220" alt="">
+          <img src="/f-v2-img2.png" alt="">
           <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
           <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
         </div>
           <div class="features-v2-item align-left">
           <img class="features-v2-item__image pos-left" src="/f-v2-i3.png" alt="">
-          <img src="http://placehold.it/515x220" alt="">
+          <img src="/f-v2-img3.png" alt="">
           <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
           <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
         </div>
         <div class="features-v2-item ">
           <img class="features-v2-item__image pos-right" src="/f-v2-i4.png" alt="">
-          <img src="http://placehold.it/515x220" alt="">
+          <img src="/f-v2-img4.png" alt="">
           <p class="section-subheader mb-10">少儿英语信息技术（IT）编程课程</p>
           <p>广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级</p>
         </div>
@@ -511,10 +511,10 @@
          <vs-collapse>
       <vs-collapse-item>
         <div slot="header">
-          我们爱坦克世界?
+          如何使用我们的平台？
         </div>
         <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+          在该网站上注册，填写您的个​​人资料，并放置头像。 然后，您可以充分利用我们的服务：与女孩见面并聊天，观看广播并参加小组讨论，提供礼物并从女孩那里购买商品！
         </p>
       </vs-collapse-item>
 
@@ -522,10 +522,10 @@
         <vs-collapse >
       <vs-collapse-item>
         <div slot="header">
-          我们爱坦克世界?
+          为什么要付费访问？
         </div>
         <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+          与来自俄罗斯的女孩交流的经验是一个非常有趣的话题。 我们仅对真正感兴趣的交流对象提供对该网站的访问权限，因为否则，这些女孩将无法应付想要使用我们服务的大量人流！
         </p>
       </vs-collapse-item>
 
@@ -533,47 +533,17 @@
         <vs-collapse>
       <vs-collapse-item>
         <div slot="header">
-          我们爱坦克世界?
+          什么是水晶，我该如何使用它们？
         </div>
         <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
+         水晶是我们平台上的本地货币。 有了它，您可以方便快捷地向女孩赠送礼物并表现出关注的迹象，成为女孩的粉丝，为女孩自己订购女孩和商品的私人礼物，以及请求个人广播！<br><br>
+
+每月使用我们的平台，您将以常规价格获得300个晶体，以VIP速率获得1200个晶体。 如果您没有足够的货币，您总是可以立即从您的个人账户充值水晶的余额！
         </p>
       </vs-collapse-item>
 
     </vs-collapse>
-         <vs-collapse >
-      <vs-collapse-item>
-        <div slot="header">
-          我们爱坦克世界?
-        </div>
-        <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
-        </p>
-      </vs-collapse-item>
 
-    </vs-collapse>
-        <vs-collapse >
-      <vs-collapse-item>
-        <div slot="header">
-          我们爱坦克世界?
-        </div>
-        <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
-        </p>
-      </vs-collapse-item>
-
-    </vs-collapse>
-        <vs-collapse>
-      <vs-collapse-item>
-        <div slot="header">
-          我们爱坦克世界?
-        </div>
-        <p>
-          广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级广播评级
-        </p>
-      </vs-collapse-item>
-
-    </vs-collapse>
       </div>
 
     </div>
@@ -595,7 +565,14 @@
         </div>
         <div class="banner-info-block__content">
           <p class="section-subheader mb-10">关于我们</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>
+          <p class="mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa enim et, illo modi porro quod similique tempora velit. Ad aut consectetur corporis doloremque enim est eum, iusto modi optio placeat provident quaerat quia repellendus reprehenderit sint veniam voluptatum!</p>
+         <div class="btn btn-outline btn-outline-d-blue">
+                  <div class="btn-outline-inner">
+                    <p>
+                      写一条消息
+                    </p>
+                  </div>
+                </div>
         </div>
       </div>
 
