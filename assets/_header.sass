@@ -1,10 +1,10 @@
 .header
-  background: #605DD0
+  background: #413FAA
   position: fixed
   width: 100%
   top: 0
   &-wrapper
-    padding: 12px 30px
+    padding: 19px 30px
     display: flex
     align-items: center
     justify-content: space-between
@@ -17,6 +17,7 @@
     &__item
     &__link
       color: #ffffff
+      font-size: 14px
   &-balance
     background: #4C32B1
     border-radius: 10px
@@ -55,8 +56,8 @@
     display: flex
     align-items: center
     justify-content: space-between
-    &.fb-270
-      flex-basis: 270px
+    &.fb-200
+      flex-basis: 200px
     &.fb-380
       flex-basis: 380px
     &__item
@@ -71,8 +72,18 @@
   &-button
     display: flex
     align-items: center
-    justify-content: space-between
-    flex-basis: 60px
+    justify-content: center
+    width: 40px
+    height: 40px
+    background: #3B3A9A
+    border-radius: 8px
+    cursor: pointer
+    border: none
+    &:hover
+      background-color: #3B3A9A
+    &:focus
+      background-color: #3B3A9A
+
     p
       color: #FFFFff
       font-size: 14px

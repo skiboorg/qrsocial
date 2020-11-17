@@ -24,7 +24,10 @@
                     <ul>
                       <!--                chatItemActive-->
                       <li class="chat-users__item chatItemActive">
-                        <img class="chat-users__item--img" src="https://picsum.photos/400/400?image=24" alt="">
+                        <div class="avatarVip">
+                           <img class="chat-users__item--img" src="https://picsum.photos/400/400?image=24" alt="">
+                        </div>
+
                         <div class="chat-users__item--lastMsg">
                           <p class="chat-users__item--text">我的简历</p>
                           <p class="chat-users__item--msg">fdgdvbcvbcvb  </p>
@@ -70,36 +73,53 @@
                 <div class="chat-right ">
                   <div class="chat-content">
                     <div class="chat-content-msg">
-                      <div class="chat-content-msg__item">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=73" alt="">
+                       <div class="chat-content-msg__item">
+<!--                        avatarVip-->
+                        <div class="chat-content-msg__item--img avatarVip">
+                           <img  src="https://picsum.photos/400/400?image=73" alt="">
+                        </div>
+
+                        <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
+                        <p class="chat-content-msg__item--time">10:30 10.09</p>
+                      </div>
+                       <div class="chat-content-msg__item">
+<!--                        avatarVip-->
+                        <div class="chat-content-msg__item--img avatarVip">
+                           <img  src="https://picsum.photos/400/400?image=73" alt="">
+                        </div>
+
+                        <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
+                        <p class="chat-content-msg__item--time">10:30 10.09</p>
+                      </div>
+                       <div class="chat-content-msg__item">
+<!--                        avatarVip-->
+                        <div class="chat-content-msg__item--img avatarVip">
+                           <img  src="https://picsum.photos/400/400?image=73" alt="">
+                        </div>
+
                         <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
                         <p class="chat-content-msg__item--time">10:30 10.09</p>
                       </div>
                       <div class="chat-content-msg__item">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=99" alt="">
+<!--                        avatarVip-->
+                        <div class="chat-content-msg__item--img avatarVip">
+                           <img  src="https://picsum.photos/400/400?image=73" alt="">
+                        </div>
+
                         <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
                         <p class="chat-content-msg__item--time">10:30 10.09</p>
                       </div>
-                      <div class="chat-content-msg__item">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=87" alt="">
+                       <div class="chat-content-msg__item">
+<!--                        avatarVip-->
+                        <div class="chat-content-msg__item--img avatarVip">
+                           <img  src="https://picsum.photos/400/400?image=73" alt="">
+                        </div>
+
                         <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
                         <p class="chat-content-msg__item--time">10:30 10.09</p>
                       </div>
-                      <div class="chat-content-msg__item ownMsg">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=70" alt="">
-                        <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
-                        <p class="chat-content-msg__item--time">10:30 10.09</p>
-                      </div>
-                      <div class="chat-content-msg__item ownMsg">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=43" alt="">
-                        <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
-                        <p class="chat-content-msg__item--time">10:30 10.09</p>
-                      </div>
-                      <div class="chat-content-msg__item ">
-                        <img class="chat-content-msg__item--img" src="https://picsum.photos/400/400?image=33" alt="">
-                        <p class="chat-content-msg__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi deleniti laborum modi mollitia repudiandae sint soluta temporibus tenetur?</p>
-                        <p class="chat-content-msg__item--time">10:30 10.09</p>
-                      </div>
+
+
                     </div>
 
                     <div class="chat-send-msg">

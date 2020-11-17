@@ -6,13 +6,25 @@
           <div class="girl-profile-stream__left">
             <div class="girl-profile-stream-block">
               <div class="girl-profile-stream-block__top">
-                <div class="girl-profile-stream-block__top--avatar">
-                  <img src="/testw.png" alt="">
+                <div style="display: flex;align-items: center;justify-content: flex-start">
+                  <div class="girl-profile-stream-block__top--avatar">
+                    <img src="/testw.png" alt="">
+                  </div>
+                  <div class="girl-profile-stream-block__top--name">
+                    <p>karina kunakuzina</p>
+                    <p>@kistochka</p>
+                  </div>
                 </div>
-                <div class="girl-profile-stream-block__top--name">
-                  <p>karina kunakuzina</p>
-                  <p>@kistochka</p>
+                 <div style="display: flex;align-items: center;justify-content: flex-start">
+                  <img style="margin-right: 10px" src="/rat.png" alt="">
+                   <div class="">
+                        <p style="color: #3E3442;font-size: 14px">7124</p>
+                    <p>广播评级</p>
+                   </div>
+
+
                 </div>
+
               </div>
               <div  class="girl-profile-stream-block__content">
                 <div v-if="streamBtnActive" @click="cllick1" class="stream-item__top-btn stream-btn-abs">
@@ -106,7 +118,7 @@
             </div>
           </div>
         </div>
-        <vs-popup class="holamundo"  title="Select gift" :active.sync="giftModal">
+        <vs-popup class="holamundo"  title="选择礼物" :active.sync="giftModal">
           <div class="gift-modal__gifts">
             <div class="gift-modal__gift">
               <img src="/g1.png" alt="">
@@ -128,11 +140,13 @@
             </div>
 
           </div>
+          <p class="mb-40">选择一个贴纸并写下您对女孩的愿望或要求！ 她一定会注意您的信息并回答您！
+            有了普通礼物，您将成为女孩的头号人物！</p>
           <div class="gift-modal__form">
-            <vs-select style="margin-right: 20px;flex-basis: 50%;" class="selectExample" v-model="select1" >
+            <vs-select placeholder="给女孩的信息" style="margin-right: 20px;flex-basis: 50%;" class="selectExample" v-model="select1" >
               <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="item,index in options1" />
             </vs-select>
-             <vs-textarea class="gift-modal__form--text" label="Мessage" v-model="textarea" />
+            <vs-textarea class="gift-modal__form--text" label="输入您的留言文字" v-model="textarea" />
           </div>
           <div >
             <div style="margin: 0 auto" class="btn btn-outline btn-outline-blue">

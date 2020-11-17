@@ -24,7 +24,19 @@
       align-items: center
       justify-content: flex-start
 
-
+.avatarVip
+  position: relative
+  display: inline-block
+  &::after
+    position: absolute
+    content: 'VIP'
+    left: 30px
+    top: -5px
+    background: $orange-gradient
+    color: #FFFFff
+    border-radius: 8px
+    padding: 0 5px
+    font-size: 10px
 .girl-lk
   &-header
     display: flex
@@ -34,6 +46,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     padding: 0 270px
     margin-bottom: 100px
+    margin-top: -100px
   &-streams
     display: grid
     grid-template-columns: 1fr 3fr
@@ -59,3 +72,19 @@
         margin-bottom: 10px
         font-weight: bold
         font-size: 18px
+
+
+.stream-active
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 20px
+    p
+      font-size: 20px
+      font-weight: bold
+  &-wrapper
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-gap: 20px
+

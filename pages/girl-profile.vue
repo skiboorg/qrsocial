@@ -622,11 +622,139 @@
         </div><!--        userStreamTab-->
         <div v-show="activeTab==='userGifts'" class="girl-profile-wrapper">
              <div class="girl-profile-left">
-               <img src="/f-img1.png" alt="">
+               <div class="block-rounded p50">
+              <p class="section-subheader mb-30 ">最好的粉丝</p>
+
+              <div class="girl-profile-bestDonate">
+                <div class="girl-profile-bestDonate__item">
+                  <div class="girl-profile-bestDonate__item--img">
+                    <img src="/testw.png" alt="">
+                  </div>
+                  <div class="girl-profile-bestDonate__item--info">
+                    <p class="girl-profile-bestDonate__item--info--place">#1 第一</p>
+                    <p class="girl-profile-bestDonate__item--info--name text-bold text-orange">卢克新教 <a
+                      href="">@saibao</a></p>
+                    <p class="girl-profile-bestDonate__item--info--amount text-orange">捐赠了8420颗水晶</p>
+                  </div>
+
+                </div>
+                <div class="girl-profile-bestDonate__item">
+                  <div class="girl-profile-bestDonate__item--img">
+                    <img src="/testw.png" alt="">
+                  </div>
+                  <div class="girl-profile-bestDonate__item--info">
+                    <p class="girl-profile-bestDonate__item--info--place">#1 第一</p>
+                    <p class="girl-profile-bestDonate__item--info--name">卢克新教 <span>@saibao</span></p>
+                    <p class="girl-profile-bestDonate__item--info--amount">捐赠了8420颗水晶</p>
+                  </div>
+
+                </div>
+                <div class="girl-profile-bestDonate__item">
+                  <div class="girl-profile-bestDonate__item--img">
+                    <img src="/testw.png" alt="">
+                  </div>
+                  <div class="girl-profile-bestDonate__item--info">
+                    <p class="girl-profile-bestDonate__item--info--place">#1 第一</p>
+                    <p class="girl-profile-bestDonate__item--info--name">卢克新教 <span>@saibao</span></p>
+                    <p class="girl-profile-bestDonate__item--info--amount">捐赠了8420颗水晶</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
           <div class="girl-profile-right">
-          <img class="mb-10" src="/f-img2.png" alt="">
-            <img src="/f-img3.png" alt="">
+            <div class="block-rounded p50">
+              <p class="section-subheader mb-30 ">给予关注</p>
+              <p class="mb-30">我们可以给女孩更多的关注：如果您有任何祝贺或疑问，请送礼物！收到礼物后，女孩肯定会通过私人聊天给您写信并开始对话！</p>
+              <div class="girl-profile-gifts">
+                <div class="girl-profile-gift">
+                  <img src="/gift1.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+                 <div class="girl-profile-gift">
+                  <img src="/gift2.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+                 <div class="girl-profile-gift">
+                  <img src="/gift3.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+                 <div class="girl-profile-gift">
+                  <img src="/gift4.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+                 <div class="girl-profile-gift">
+                  <img src="/gift5.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+                 <div class="girl-profile-gift">
+                  <img src="/gift1.png" alt="">
+                  <p class="girl-profile-gift__name">一点惊喜</p>
+                  <p class="girl-profile-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                </div>
+              </div>
+              <div class="girl-profile-form">
+                <el-input placeholder="输入女孩的愿望或信息" v-model="input"></el-input>
+                 <div class="btn btn-l-blue-solid btn-hover-shadow"><p>发送</p></div>
+              </div>
+            </div>
+               <div class="block-rounded p50">
+              <p class="section-subheader mb-30 ">给予关注</p>
+              <p class="mb-30">我们可以给女孩更多的关注：如果您有任何祝贺或疑问，请送礼物！
+收到礼物后，女孩肯定会通过私人聊天给您写信并开始对话！</p>
+              <div class="girl-profile-gifts-list">
+                <div class="girl-profile-list-gift">
+
+                  <img src="/gift1.png" alt="">
+                  <p class="girl-profile-list-gift__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis et fuga perspiciatis qui veniam voluptatum. Alias, dolor, eaque error esse ipsa iure odio pariatur possimus reiciendis rerum sed, sint sunt!</p>
+                  <p class="girl-profile-list-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                   <el-checkbox v-model="checked"></el-checkbox>
+                </div>
+                   <div class="girl-profile-list-gift">
+
+                  <img src="/gift5.png" alt="">
+                  <p class="girl-profile-list-gift__name">一点惊喜</p>
+                  <p class="girl-profile-list-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                   <el-checkbox v-model="checked"></el-checkbox>
+                </div>
+                   <div class="girl-profile-list-gift">
+
+                  <img src="/gift2.png" alt="">
+                  <p class="girl-profile-list-gift__name">一点惊喜</p>
+                  <p class="girl-profile-list-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                   <el-checkbox v-model="checked"></el-checkbox>
+                </div>
+                   <div class="girl-profile-list-gift">
+
+                  <img src="/gift3.png" alt="">
+                  <p class="girl-profile-list-gift__name">一点惊喜</p>
+                  <p class="girl-profile-list-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                   <el-checkbox v-model="checked"></el-checkbox>
+                </div>
+                   <div class="girl-profile-list-gift">
+
+                  <img src="/gift4.png" alt="">
+                  <p class="girl-profile-list-gift__name">一点惊喜</p>
+                  <p class="girl-profile-list-gift__number"><img src="/diamond.png" alt=""> 59</p>
+                   <el-checkbox v-model="checked"></el-checkbox>
+                </div>
+
+
+              </div>
+              <div class="girl-profile-form">
+                <el-input placeholder="输入女孩的愿望或信息" v-model="input"></el-input>
+                 <div class="btn btn-l-blue-solid btn-hover-shadow"><p>发送</p></div>
+              </div>
+            </div>
+
+
           </div>
         </div><!--        userGifts-->
       </div>
@@ -641,11 +769,12 @@
   export default {
     data(){
       return {
+         input: '',
         player: null,
         value1:'',
         value2:'',
         value3:'',
-        activeTab:'userInfo',//'userInfo'
+        activeTab:'userGifts',//'userInfo'
         imageModal:false,
         currentImage:null,
       }
@@ -662,6 +791,15 @@
 
 
 <style >
+  .el-checkbox__inner{
+    width: 24px;
+    height: 24px;
+  }
+  .el-checkbox__inner::after{
+    height: 15px;
+    left: 10px;
+    top: 2px;
+  }
   .my-player-dimensions{
     width: 100%;
   }

@@ -13,7 +13,7 @@
 
        </div>
        <div class="footer-bottom">
-         <p class="text-center">vipjr.com 版权所有 (2008- 2020) 翻印必究 </p>
+         <p class="text-center"><nuxt-link to="/girl-login">Вход для девушек</nuxt-link> </p>
        </div>
 
 

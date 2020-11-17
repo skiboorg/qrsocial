@@ -7,6 +7,7 @@
   <el-menu-item index="2"><nuxt-link to="/girl-lk-chat">МОИ ЧАТЫ</nuxt-link></el-menu-item>
   <el-menu-item index="3"><nuxt-link to="/girl-lk-streams">МОИ ТРАНСЛЯЦИИ</nuxt-link></el-menu-item>
   <el-menu-item index="4"><nuxt-link to="/girl-lk">МОИ ДРУЗЬЯ</nuxt-link></el-menu-item>
+      <el-menu-item index="5"><nuxt-link to="/girl-gifts">МОИ Подарки</nuxt-link></el-menu-item>
 
 </el-menu>
 <div class="line"></div>
